@@ -25,7 +25,7 @@ const Header = () => {
     </div>
     </nav>
     <hr />
-    <header className='mx-8 p-2 md:p-4 h-16 flex justify-between items-center'>
+    <header className='mx-8 p-2 md:p-4 h-16 flex justify-between items-center sticky top-0 bg-white'>
           <img className='hidden sm:block w-40 md:w-auto' src="../src/assets/shanti_academy-logo.png" alt="logo" />
           <img className='sm:hidden block w-16' src="../src/assets/shanti_academy_small-logo.png" alt="logo" />
       
@@ -35,7 +35,7 @@ const Header = () => {
             <li className='hover:border-orange-500 hover:border-b-2' >Our Portfolio</li>
             <li className='hover:border-orange-500 hover:border-b-2' >About Us</li>
             <li className='hover:border-orange-500 hover:border-b-2' >Training</li>
-            <button className='hidden md:block border border-black p-2 px-4 rounded'>
+            <button className=' border border-black p-2 px-4 rounded'>
             Contact Us
           </button>
           </ul>

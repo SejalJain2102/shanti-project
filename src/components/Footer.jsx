@@ -1,8 +1,13 @@
 import React from 'react'
 import { CiMail } from "react-icons/ci";
 import { SiSkypeforbusiness } from "react-icons/si";
-import { FaWhatsapp } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa6";
+import { TiSocialSkypeOutline } from "react-icons/ti";
+
 
 
 const Footer = () => {
@@ -54,10 +59,49 @@ const Footer = () => {
         </ul>
       </div>
     </div>
-    <div>
+    <div className='bg-[#031130] text-white lg:flex justify-between space-y-3 pt-3 items-center sm:px-32 px-10'>
       <p>Copyright © 2024 shantiinfosoft.com   |   All rights reserved.</p>
-      <div className='rounded-full border-r-4 border-red-600 hover:animate-spin ease-in h-8 w-8'>
-        <FaFacebookF className=' text-4xl p-2 fixed'/>
+
+      <div className='grid sm:grid-cols-6 grid-cols-3 pt-5 items-center justify-center sm:gap-4 gap-1'>
+
+        <div className='col-span-1 '>
+        <div className='circle rounded-full border-r-4 border-white hover:border-red-500  h-12 w-12 transition-transform duration-1200 ease-in-out hover:rotate-360'><a href="https://www.facebook.com/shantiinfosoft"></a></div>
+        <a href="https://www.facebook.com/shantiinfosoft">
+        <FaFacebookF className=' text-4xl p-1  relative -top-10 left-1 '/>
+        </a>
+        </div>
+        <div className='col-span-1'>
+        <div className='circle rounded-full border-r-4 border-white hover:border-red-500  h-12 w-12 transition-transform duration-1200 ease-in-out hover:rotate-360'></div>
+        <a href="https://www.linkedin.com/company/shantiinfosoft/?originalSubdomain=in">
+        <FaLinkedinIn className=' text-4xl p-1  relative -top-10 left-1 '/>
+        </a>
+        </div>
+        <div className='col-span-1'>
+        <div className='circle rounded-full border-r-4 border-white hover:border-red-500  h-12 w-12 transition-transform duration-1200 ease-in-out hover:rotate-360'></div>
+        <a href="https://x.com/i/flow/login?redirect_after_login=%2Fshantiinfosoft">
+        <FaXTwitter className=' text-4xl p-1  relative -top-10 left-1 '/>
+        </a>
+        </div>
+        <div className='col-span-1'>
+        <div className='circle rounded-full border-r-4 border-white hover:border-red-500  h-12 w-12 transition-transform duration-1200 ease-in-out hover:rotate-360'></div>
+        <a href="https://www.instagram.com/shantiinfosoftllp/">
+        <FaInstagram className=' text-4xl p-1  relative -top-10 left-1 '/>
+        </a>
+        </div>
+        <div className='col-span-1'>
+        <div className='circle rounded-full border-r-4 border-white hover:border-red-500  h-12 w-12 transition-transform duration-1200 ease-in-out hover:rotate-360'></div>
+        <a href="https://api.whatsapp.com/send/?phone=9981225000&text=Hi%2C+Shantiinfosoft&type=phone_number&app_absent=0">
+        <FaWhatsapp className=' text-4xl p-1  relative -top-10 left-1 '/>
+        </a>
+        </div>
+        <div className='col-span-1'>
+        <div className='circle rounded-full border-r-4 border-white hover:border-red-500  h-12 w-12 transition-transform duration-1200 ease-in-out hover:rotate-360'></div>
+        <a href="skype:shanti.infotech">
+        <TiSocialSkypeOutline className=' text-4xl p-1  relative -top-10 left-1 '/>
+
+        </a>
+        </div>
+
       </div>
     </div>
     </>
