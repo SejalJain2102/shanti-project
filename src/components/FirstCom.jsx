@@ -170,7 +170,7 @@ const FirstCom = () => {
                 </label>
               </div>
             </div>
-            <div className='border w-72 rounded bg-slate-100 flex justify-between items-center p-2 mb-3 '>
+            <div className='border max-w-w-72 rounded bg-slate-100 flex justify-between items-center p-2 mb-3 '>
               <label className='flex items-center gap-1'>
                 <input
                   type='checkbox'
