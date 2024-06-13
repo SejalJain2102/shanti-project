@@ -103,7 +103,7 @@ const Crou = () => {
               className={`slider h-full p-4 rounded-lg ${bgColor} shadow-lg`}
               key={index}
             >
-              <h2 className="text-center font-bold text-3xl sm:text-4xl lg:text-6xl mb-2">
+              <h2 className="text-end font-bold text-3xl sm:text-4xl lg:text-6xl mb-2">
                 {item.heading1}
               </h2>
               <h3 className="text-center font-semibold text-lg sm:text-xl mb-2">

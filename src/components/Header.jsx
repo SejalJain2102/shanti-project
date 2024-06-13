@@ -42,13 +42,13 @@ const Header = () => {
         {/* Menu Button for Mobile */}
         <div className="flex items-center gap-3 md:hidden">
           <button className='text-3xl' onClick={toggleMenu}>
-            {isMenuOpen ? <IoClose className='text-[#333] hover:text-[#EE4F50] transition transform hover:rotate-90' /> : <IoMenu className='text-[#333] hover:text-[#EE4F50] transition' />}
+            {isMenuOpen ? <IoClose className='text-[#333]  hover:text-[#EE4F50] transition transform hover:rotate-90' /> : <IoMenu className='text-[#333] hover:text-[#EE4F50] transition' />}
           </button>
         </div>
         
         {/* Navigation Links */}
-        <div className="hidden md:flex items-center gap-6">
-          <ul className={`flex gap-6 items-center ${isMenuOpen ? 'flex-col absolute top-16 right-4 bg-white shadow-md rounded-md py-2 px-4' : 'hidden'}`}>
+        <div className={`md:flex items-center gap-6 ${isMenuOpen ? 'block' : 'hidden'} md:block`}>
+          <ul className={`flex flex-col md:flex-row gap-6 items-center ${isMenuOpen ? 'absolute top-16 right-4 bg-white shadow-md rounded-md py-2 px-4 md:relative md:top-0 md:bg-transparent md:shadow-none md:rounded-none' : 'hidden md:flex'}`}>
             <li className='hover:text-[#EE4F50] cursor-pointer'>Services</li>
             <li className='hover:text-[#EE4F50] cursor-pointer'>Our Portfolio</li>
             <li className='hover:text-[#EE4F50] cursor-pointer'>About Us</li>

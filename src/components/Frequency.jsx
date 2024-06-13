@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { FaPlus } from "react-icons/fa";
+import { LuPlus } from "react-icons/lu";
+
 import { IoClose } from "react-icons/io5";
 
 const Frequency = () => {
@@ -43,7 +44,7 @@ const Frequency = () => {
             <h2 className='flex justify-between items-center text-lg md:text-xl lg:text-2xl font-bold'>
               What is The Difference Between UI And UX Design?
               <button className='' onClick={toggleMenu}>
-                {isMenuOpen ? <IoClose className='text-2xl ml-auto' /> : <FaPlus className='' />}
+                {isMenuOpen ? <IoClose className='text-2xl ml-auto' /> : <LuPlus className='' />}
               </button>
             </h2>
             <div className={`py-4 ${isMenuOpen ? 'block' : 'hidden'}`}>
@@ -57,7 +58,7 @@ const Frequency = () => {
             <h2 className='flex justify-between items-center text-lg md:text-xl lg:text-2xl font-bold'>
               What Are The Expected UX Deliverables?
               <button className='' onClick={toggleMenu1}>
-                {isMenuOpen1 ? <IoClose className='text-2xl ml-auto' /> : <FaPlus className='' />}
+                {isMenuOpen1 ? <IoClose className='text-2xl ml-auto' /> : <LuPlus className='' />}
               </button>
             </h2>
             <div className={`py-4 ${isMenuOpen1 ? 'block' : 'hidden'}`}>
@@ -71,7 +72,7 @@ const Frequency = () => {
             <h2 className='flex justify-between items-center text-lg md:text-xl lg:text-2xl font-bold'>
               How Important Is UX And What Are The Basics Of UX Design?
               <button className='' onClick={toggleMenu2}>
-                {isMenuOpen2 ? <IoClose className='text-2xl ml-auto' /> : <FaPlus className='' />}
+                {isMenuOpen2 ? <IoClose className='text-2xl ml-auto' /> : <LuPlus className='' />}
               </button>
             </h2>
             <div className={`py-4 ${isMenuOpen2 ? 'block' : 'hidden'}`}>
@@ -85,7 +86,7 @@ const Frequency = () => {
             <h2 className='flex justify-between items-center text-lg md:text-xl lg:text-2xl font-bold'>
               How To Create An Enticing User Experience?
               <button className='' onClick={toggleMenu22}>
-                {isMenuOpen22 ? <IoClose className='text-2xl ml-auto' /> : <FaPlus className='' />}
+                {isMenuOpen22 ? <IoClose className='text-2xl ml-auto' /> : <LuPlus className='' />}
               </button>
             </h2>
             <div className={`py-4 ${isMenuOpen22 ? 'block' : 'hidden'}`}>
@@ -99,7 +100,7 @@ const Frequency = () => {
             <h2 className='flex justify-between items-center text-lg md:text-xl lg:text-2xl font-bold'>
               What UI/UX Design Services Does Shanti Infosoft Offer?
               <button className='' onClick={toggleMenu3}>
-                {isMenuOpen3 ? <IoClose className='text-2xl ml-auto' /> : <FaPlus className='' />}
+                {isMenuOpen3 ? <IoClose className='text-2xl ml-auto' /> : <LuPlus className='' />}
               </button>
             </h2>
             <div className={`py-4 ${isMenuOpen3 ? 'block' : 'hidden'}`}>
@@ -113,7 +114,7 @@ const Frequency = () => {
             <h2 className='flex justify-between items-center text-lg md:text-xl lg:text-2xl font-bold'>
               What Are The Three Stages Of The Product Ideation Process That Shanti Infosoft Follows?
               <button className='' onClick={toggleMenu4}>
-                {isMenuOpen4 ? <IoClose className='text-2xl ml-auto' /> : <FaPlus className='' />}
+                {isMenuOpen4 ? <IoClose className='text-2xl ml-auto' /> : <LuPlus className='' />}
               </button>
             </h2>
             <div className={`py-4 ${isMenuOpen4 ? 'block' : 'hidden'}`}>
