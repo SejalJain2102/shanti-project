@@ -1,16 +1,21 @@
-.carousel-container {
-  position: relative;
-}
-
-.custom-dot-list-style {
+.carousel-container .react-multi-carousel-dot-list {
   position: absolute;
-  bottom: -5px;
-  width: 100%;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   justify-content: center;
- 
 }
 
-.carousel-item-padding-40-px {
-  padding: 10px;
+.carousel-container .react-multi-carousel-dot button {
+  border: none;
+  background: #ccc;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.carousel-container .react-multi-carousel-dot--active button {
+  background: #000;
 }

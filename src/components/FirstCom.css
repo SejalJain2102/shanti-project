@@ -1,0 +1,13 @@
+.button-hover::after {
+  content: 'SUBMIT';
+  display: none;
+}
+
+.button-hover:hover::after {
+  display: inline;
+}
+
+.button-hover:hover .default-text {
+  display: none;
+}
+

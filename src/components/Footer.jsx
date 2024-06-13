@@ -13,7 +13,7 @@ import { TiSocialSkypeOutline } from "react-icons/ti";
 const Footer = () => {
   return (
       <>
-    <div className=' bg-[#031130] grid lg:grid-cols-6 md:grid-cols-4 grid-cols-2 lg:px-32 md:px-44 sm:px-32 px-10 pt-24 gap-10 text-white font-semibold'>
+    <div className=' bg-[#031130] grid lg:grid-cols-6 md:grid-cols-4 mt-7 grid-cols-2 lg:px-32 md:px-44 sm:px-32 px-10 pt-24 gap-10 text-white font-semibold'>
       <div className='flex flex-col justify-between items-start h-full col-span-2'>
         <img src="../src/assets/footer-logo.svg" alt="logo" />
         <h1>Let’s Flaunt Your Digital

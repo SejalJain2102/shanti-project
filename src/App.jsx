@@ -16,9 +16,9 @@ function App() {
      <FirstCom/>
      <SecondCom/>
      <ThirdCom/>
+     <Why/>
      <Frequency/>
      <Crou/>
-     <Why/>
      <Footer/>
     </>
   )
