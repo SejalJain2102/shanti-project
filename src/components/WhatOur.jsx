@@ -127,7 +127,7 @@ const WhatOur = () => {
                   {item.paragraph}
                 </p>
                 <div className="flex justify-start items-start gap-2  ">
-                <img src={item.mainUrl} alt={`Image ${index}`} className=" w-8 rounded-full border border-red-500"/>
+                <img src={item.mainUrl} alt={`Image ${index}`} className=" w-8 h-8 rounded-full border border-red-500"/>
                 <h4 className="text-start font-semibold text-lg sm:text-xl">
                   {item.heading4}
                 </h4>
