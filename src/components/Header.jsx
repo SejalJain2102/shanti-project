@@ -35,9 +35,9 @@ const Header = () => {
       <hr />
       
       {/* Main Header */}
-      <header className='mx-4 sm:mx-8 md:mx-16 p-2 md:p-4 h-16 flex justify-between items-center sticky top-0 bg-white'>
-        <img className='hidden sm:block w-40 md:w-auto' src="../src/assets/shanti_academy-logo.png" alt="logo" />
-        <img className='sm:hidden block w-16' src="../src/assets/shanti_academy_small-logo.png" alt="logo" />
+      <header className='mx-4 sm:mx-8 md:mx-16 p-2 md:p-4 h-16 flex justify-between items-center sticky top-0 z-10 bg-white'>
+        <img className='hidden sm:block h-14 p-1 md:w-auto' src="../src/assets/ShantiAcademyLogo.png" alt="logo" />
+        <img className='sm:hidden block h-14 p-1' src="../src/assets/ShantiAcademyLogo.png" alt="logo" />
         
         {/* Menu Button for Mobile */}
         <div className="flex items-center gap-3 md:hidden">
@@ -52,7 +52,7 @@ const Header = () => {
             <li className='hover:text-[#EE4F50] cursor-pointer'>Services</li>
             <li className='hover:text-[#EE4F50] cursor-pointer'>Our Portfolio</li>
             <li className='hover:text-[#EE4F50] cursor-pointer'>About Us</li>
-            <li className='hover:text-[#EE4F50] cursor-pointer'>Training</li>
+            <Link to="/training"><li className='hover:text-[#EE4F50] cursor-pointer'>Training</li></Link>
           </ul>
           <button className='border border-black p-2 px-4 rounded hidden md:block'>Contact Us</button>
         </div>

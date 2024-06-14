@@ -36,8 +36,17 @@ const Frequency = () => {
 
   return (
     <div className='pt-10   m-1 sm:mx-22 md:mx-24 lg:mx-56'>
-      <div className=' space-y-3'>
-        <h1 className='text-3xl md:text-4xl lg:text-6xl font-bold text-slate-200 text-center mt-10 mb-6'>Frequently Asked Questions</h1>
+      <div className=' space-y-3  '>
+      <div className='flex flex-col justify-center items-start my-10 relative'>
+        <h1 className='text-3xl  md:text-4xl lg:text-6xl font-bold text-slate-200 text-start mt-10 mb-6 relative'>
+          Frequently Asked Questions
+        </h1>
+        <h2 className='font-bold text-2xl md:text-3xl lg:text-4xl absolute  mt-6 text-start'>
+          <strong className='text-red-500 pr-1'>—</strong>
+          Frequently Asked Questions
+        </h2>
+      </div>
+
 
         <div className='space-y-6'>
           <div className='border-b-2 border-gray-200'>

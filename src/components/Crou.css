@@ -1,5 +1,5 @@
 .carousel-container .react-multi-carousel-dot-list {
-  position: absolute;
+  position: relative;
   bottom: -25px;
   left: 50%;
   transform: translateX(-50%);
@@ -13,9 +13,19 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  margin: 0 5px;
+  
+  margin: 10px;
 }
 
 .carousel-container .react-multi-carousel-dot--active button {
   background: #000;
 }
+
+
+
+.align-left {
+  align-self: flex-start;
+}
+
+/* second crouu */
+

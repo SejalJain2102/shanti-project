@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 import 'react-phone-input-2/lib/style.css';
 import PhoneInput from 'react-phone-input-2';
 import './FirstCom.css'; 
@@ -47,7 +48,7 @@ const FirstCom = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://example.com/api/form', formData);
+      const response = await axios.post('http://abhinay.com/api/form', formData);
       console.log('Form submitted:', response.data);
     } catch (error) {
       console.error('Form submission error:', error);
@@ -55,10 +56,12 @@ const FirstCom = () => {
   };
 
   return (
-    <div className='container mx-auto px-4 sm:px-8 md:px-16 lg:px-32 xl:px-40'>
+    <div style={{backgroundImage:"url('https://shantiinfosoft.com/images/training/banner-bg.svg')", backgroundSize: "cover",
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "center"}}  className='container mx-auto px-4 pt-6 sm:px-8 md:px-16 lg:px-32 xl:px-40'>
       <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 mt-10'>
         {/* Left section */}
-        <div className='flex justify-center items-center'>
+        <div className='flex justify-start items-start'>
           <div className='p-7 flex flex-col gap-5'>
             <h1 className='font-bold text-3xl lg:text-4xl '>
               Level Up Your Tech Game <br />
@@ -170,8 +173,8 @@ const FirstCom = () => {
                 </label>
               </div>
             </div>
-            <div className='border max-w-w-72 rounded bg-slate-100 flex justify-between items-center p-2 mb-3 '>
-              <label className='flex items-center gap-1'>
+            <div className='border max-w-72 rounded bg-slate-100 flex justify-between  items-center p-2 mb-3 '>
+              <label className='flex  items-center gap-1'>
                 <input
                   type='checkbox'
                   className='h-8 w-8'
@@ -191,14 +194,14 @@ const FirstCom = () => {
                 <span className='text-[6px] '>Privacy - Terms</span>
               </div>
             </div>
-            <button
-              className='bg-red-600 text-white px-4 py-2 rounded w-full md:w-36 mx-auto hover:bg-red-700'
+            <Link to="/submit" ><button
+              className='bg-red-600 text-white m-2 px-4 py-2 rounded w-full md:w-36 mx-auto hover:bg-red-700'
               type='submit'
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
             >
               {isHovered ? 'Submit' : 'REGISTER'}
-            </button>
+            </button></Link>
           </form>
         </div>
       </div>

@@ -74,17 +74,20 @@ const sliderItems = [
 
 const Crou = () => {
   return (
-    <div className="parent mx-2 mb-4 m-1 sm:mx-22 md:mx-24 lg:mx-56 mt-20 space-y-5">
-      <div className="flex flex-col gap-3 my-10">
-      <h1 className="font-bold text-3xl sm:text-4xl lg:text-5xl text-start">
-        Why Choose Us?
-      </h1>
-      <p className="text-base sm:text-lg lg:text-xl text-start ">
-        We offer a unique combination of comprehensive training programs and
-        immersive internships that equip you with the skills and experience
-        needed to succeed. Here's why you should choose us:
-      </p>
+    <>
+    <div className='pt-10   m-1 sm:mx-22 md:mx-24 lg:mx-56'>
+      <div className='flex flex-col justify-center items-start my-10 relative'>
+        <h1 className='text-3xl  md:text-4xl lg:text-6xl font-bold text-slate-200 text-start mt-10 mb-6 relative'>
+          What our Student say
+        </h1>
+        <h2 className='font-bold text-2xl md:text-3xl lg:text-4xl absolute  mt-6 text-start'>
+          <strong className='text-red-500 pr-1'>—</strong>
+          What our Student say
+        </h2>
       </div>
+    </div>
+    <div className="parent mx-2 mb-4 m-1 sm:mx-22 md:mx-24 lg:mx-56 mt-10 space-y-5">
+      
       <Carousel
         responsive={responsive}
         autoPlay={true}
@@ -120,6 +123,7 @@ const Crou = () => {
         })}
       </Carousel>
     </div>
+    </>
   );
 };
 

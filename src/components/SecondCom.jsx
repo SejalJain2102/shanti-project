@@ -2,18 +2,18 @@ import React from 'react';
 
 const SecondCom = () => {
   return (
-    <div className='my-20  px-4 sm:px-6 lg:px-8 lg:flex m-1 sm:mx-22 md:mx-24 lg:mx-56 p-3 gap-10'>
+    <div className='my-32  px-4 sm:px-6 lg:px-8 lg:flex m-1 sm:mx-22 md:mx-24 lg:mx-56 p-3 gap-10'>
       {/* Left Section */}
       <div className='lg:w-1/2 w-full flex flex-col justify-center'>
         <div className=' md:mb-0'>
           <img className='w-full' src="https://shantiinfosoft.com/images/training/training-img.png" alt="Training Image" />
         </div>
-        <div className='grid grid-cols-1 mt-3 gap-3'>
-          <div className='bg-slate-700  rounded-md text-white text-center p-2'>
+        <div className='grid grid-cols-1 lg:grid-cols-3 mt-3 gap-3'>
+          <div className='bg-slate-700 col-span-1 flex flex-col justify-center rounded-md text-white text-center p-2'>
             <p className='text-2xl'>100+</p>
             <p>Weekly Active Students</p>
           </div>
-          <div className=''>
+          <div className='col-span-2'>
             <img className='w-full' src="https://shantiinfosoft.com/images/training/training-img-2.png" alt="Training Image 2" />
           </div>
         </div>
