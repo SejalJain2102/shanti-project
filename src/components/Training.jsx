@@ -6,6 +6,7 @@ import SecondCom from './SecondCom'
 import Explore from './Explore'
 import OurPlace from './OurPlace'
 import WhatOur from './WhatOur'
+import Banner from './Banner'
 // import Crouu from './Crouu'
 // import Why from './Why'
 
@@ -18,6 +19,7 @@ const Training = () => {
      <Explore/>
      <WhatOur/>
      {/* <Why/> */}
+     <Banner/>
      <Frequency/>
      <Crou/>
      {/* <Crouu/> */}

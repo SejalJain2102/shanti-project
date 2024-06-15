@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { TiTick } from "react-icons/ti";
 import { MdComputer } from "react-icons/md";
 import { SlCalender } from "react-icons/sl";
@@ -11,11 +11,16 @@ import { TbWorld } from "react-icons/tb";
 import { GiPublicSpeaker } from "react-icons/gi";
 import { RiContactsFill } from "react-icons/ri";
 import { IoVideocam } from "react-icons/io5";
+import { useLocation } from 'react-router-dom';
 
 
 
 
 const DigitalMar = () => {
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
   return (
     <>
     <div className='flex flex-col justify-center items-center  p-3 mt-16' style={{ backgroundImage:"url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-2aSeZzdpm2l6y9vpmllV33BImkP9D6PeO_PsWGTOLq6sGpp7)" , backgroundRepeat:"no-repeat", backgroundSize:"cover" }} >

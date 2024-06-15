@@ -75,7 +75,7 @@ const FirstCom = () => {
               with leading IT companies in Indore.
             </p>
             <div className='flex gap-4 items-center justify-start'>
-              <button className='px-4 py-2 text-white font-bold bg-red-600 rounded hover:bg-red-700'>
+              <button className='px-4 py-2 tracking-widest font-bold text-sm  text-white  bg-red-600 rounded hover:bg-red-700'>
                 Explore
               </button>
               <img
@@ -127,10 +127,11 @@ const FirstCom = () => {
                 required: true,
                 autoFocus: false,
               }}
+             
             />
             <div className='flex flex-col mb-3'>
               <label className='text-gray-600'>Select Courses</label>
-              <div className='grid grid-cols-2 gap-2 mt-2'>
+              <div className='sm:flex xl:flex justify-between items-center lg:grid lg:grid-cols-2 grid grid-cols-2  gap-2 mt-2'>
                 <label className='flex items-center gap-1'>
                   <input
                     type='checkbox'
@@ -195,7 +196,7 @@ const FirstCom = () => {
               </div>
             </div>
             <Link to="/submit" ><button
-              className='bg-red-600 text-white m-2 px-4 py-2 rounded w-full md:w-36 mx-auto hover:bg-red-700'
+              className='bg-red-600 tracking-widest font-bold text-sm text-white m-2 px-4 py-2 rounded w-full md:w-36 mx-auto hover:bg-red-700'
               type='submit'
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}

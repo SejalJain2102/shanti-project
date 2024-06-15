@@ -74,7 +74,7 @@ const sliderItems = [
 
 const Crou = () => {
   return (
-    <div className="parent mx-2 mb-4 m-1 sm:mx-22 md:mx-24 lg:mx-56 mt-20 space-y-5">
+    <div className="parent mx-2 mb-4 m-1 sm:mx-24 md:mx-32 lg:mx-56 mt-20 space-y-5">
       <div className="flex flex-col gap-3 my-10">
       <h1 className="font-bold text-3xl sm:text-4xl lg:text-5xl text-start">
         Why Choose Us?

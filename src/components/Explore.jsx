@@ -8,8 +8,8 @@ import python from "../assets/python-logo.svg";
 const Explore = () => {
   return (
     <>
-    <h1 className='text-3xl md:text-4xl lg:text-6xl font-bold mt-14 m-1 sm:mx-22 md:mx-24 lg:mx-56'>Explore Diverse Tech Avenues</h1>
-    <div className='grid lg:grid-cols-2 sm:grid-cols-1 gap-10 mt-10 m-1 sm:mx-22 md:mx-24 lg:mx-56'>
+    <h1 className='text-3xl md:text-4xl lg:text-6xl font-bold mt-14 m-1 sm:mx-24 md:mx-32 lg:mx-56'>Explore Diverse Tech Avenues</h1>
+    <div className='grid lg:grid-cols-2 sm:grid-cols-1 gap-10 mt-10 m-1 sm:mx-24 md:mx-32 lg:mx-56'>
       {/* Node.js Section */}
       <div className='border rounded-md p-5 space-y-4 h-fit'>
         <div className='flex items-center'>
@@ -29,7 +29,7 @@ const Explore = () => {
             <li className='flex items-center'><IoMdCheckmarkCircleOutline/> MVC</li>
             <li className='flex items-center'><IoMdCheckmarkCircleOutline/> Build reusable modules</li>
           </ul>
-          <Link to="/node"><button className='bg-red-600 text-white font-bold rounded w-full py-1 hover:bg-red-700'>Know More</button></Link>
+          <Link to="/node"><button className='bg-red-600 text-white tracking-widest font-bold text-sm rounded w-full py-1 hover:bg-red-700'>Know More</button></Link>
         </div>
       </div>
 
@@ -52,7 +52,7 @@ const Explore = () => {
             <li className='flex items-center'><IoMdCheckmarkCircleOutline/> React Testing Library</li>
             <li className='flex items-center'><IoMdCheckmarkCircleOutline/> Code Splitting</li>
           </ul>
-          <Link to="/reactjs"><button className='bg-red-600 text-white font-bold rounded w-full py-1 hover:bg-red-700'>Know More</button></Link>
+          <Link to="/reactjs"><button className='bg-red-600 text-white tracking-widest font-bold text-sm rounded w-full py-1 hover:bg-red-700'>Know More</button></Link>
         </div>
       </div>
 
@@ -75,7 +75,7 @@ const Explore = () => {
             <li className='flex items-center'><IoMdCheckmarkCircleOutline/> Web Scraping</li>
             <li className='flex items-center'><IoMdCheckmarkCircleOutline/> Web App Development With Django</li>
           </ul>
-          <Link to="/python"><button className='bg-red-600 text-white font-bold rounded w-full py-1 hover:bg-red-700'>Know More</button></Link>
+          <Link to="/python"><button className='bg-red-600 text-white tracking-widest font-bold text-sm rounded w-full py-1 hover:bg-red-700'>Know More</button></Link>
         </div>
       </div>
 
@@ -98,7 +98,7 @@ const Explore = () => {
             <li className='flex items-center'><IoMdCheckmarkCircleOutline/> Pay Per Click</li>
             <li className='flex items-center'><IoMdCheckmarkCircleOutline/> App Store Optimization</li>
           </ul>
-          <Link to="/digitalMar"><button className='bg-red-600 text-white font-bold rounded w-full py-1 hover:bg-red-700'>Know More</button></Link>
+          <Link to="/digitalMar"><button className='bg-red-600 text-white tracking-widest font-bold text-sm rounded w-full py-1 hover:bg-red-700'>Know More</button></Link>
         </div>
       </div>
     </div>

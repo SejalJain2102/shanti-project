@@ -35,7 +35,7 @@ const Frequency = () => {
   };
 
   return (
-    <div className='pt-10   m-1 sm:mx-22 md:mx-24 lg:mx-56'>
+    <div className='pt-10   m-1 ssm:mx-24 md:mx-32 lg:mx-56'>
       <div className=' space-y-3  '>
       <div className='flex flex-col justify-center items-start my-10 relative'>
         <h1 className='text-3xl  md:text-4xl lg:text-6xl font-bold text-slate-200 text-start mt-10 mb-6 relative'>
