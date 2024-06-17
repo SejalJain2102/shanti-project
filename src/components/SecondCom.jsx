@@ -20,7 +20,7 @@ const SecondCom = () => {
       </div>
 
       {/* Right Section */}
-      <div className='xl:w-1/2 flex flex-col justify-center mt-4'>
+      <div className='xl:w-1/2 flex flex-col justify-center '>
         <h1 className='font-bold text-3xl lg:text-4xl mb-6'>Who is this for?</h1>
         <p className='text-base lg:text-lg mb-6'>If you are a beginner and want to grow your career with React JS, Node JS, Python, and Digital Marketing, we're here to help you polish your skills. Our approach is hands-on – we believe in learning by doing, tackling real-world situations, and discussing the hows, whys, and whats of solving problems.</p>
         <p className='text-base lg:text-lg mb-6'>At our training and internship institute in Indore, we emphasize live project implementation, problem-solving skills, teaching ethical coding practices, soft skill training, and more. If you are stuck, don't worry – we have in-house trainers ready to assist you! Plus, the projects we work on are not only educational but also a lot of fun! Join us on this journey, where we focus on boosting your confidence.</p>

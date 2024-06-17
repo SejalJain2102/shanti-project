@@ -35,7 +35,7 @@ const Frequency = () => {
   };
 
   return (
-    <div className='pt-10   m-1 ssm:mx-24 md:mx-32 lg:mx-56'>
+    <div className='pt-10   m-1 sm:mx-24 md:mx-32 lg:mx-56'>
       <div className=' space-y-3  '>
       <div className='flex flex-col justify-center items-start my-10 relative'>
         <h1 className='text-3xl  md:text-4xl lg:text-6xl font-bold text-slate-200 text-start mt-10 mb-6 relative'>
@@ -50,9 +50,9 @@ const Frequency = () => {
 
         <div className='space-y-6'>
           <div className='border-b-2 border-gray-200'>
-            <h2 className='flex justify-between items-center text-lg md:text-xl lg:text-2xl font-bold'>
+            <h2 onClick={toggleMenu} className='hover:bg-[rgba(245,241,241,0.98)] rounded-md p-2  flex justify-between items-center text-lg md:text-xl lg:text-2xl font-bold'>
               What is The Difference Between UI And UX Design?
-              <button className='' onClick={toggleMenu}>
+              <button className='' >
                 {isMenuOpen ? <IoClose className='text-2xl ml-auto' /> : <LuPlus className='' />}
               </button>
             </h2>
@@ -64,9 +64,9 @@ const Frequency = () => {
           </div>
 
           <div className='border-b-2 border-gray-200'>
-            <h2 className='flex justify-between items-center text-lg md:text-xl lg:text-2xl font-bold'>
+            <h2 onClick={toggleMenu1} className='hover:bg-[rgba(245,241,241,0.98)] rounded-md p-2  flex justify-between items-center text-lg md:text-xl lg:text-2xl font-bold'>
               What Are The Expected UX Deliverables?
-              <button className='' onClick={toggleMenu1}>
+              <button className='' >
                 {isMenuOpen1 ? <IoClose className='text-2xl ml-auto' /> : <LuPlus className='' />}
               </button>
             </h2>
@@ -78,9 +78,9 @@ const Frequency = () => {
           </div>
 
           <div className='border-b-2 border-gray-200'>
-            <h2 className='flex justify-between items-center text-lg md:text-xl lg:text-2xl font-bold'>
+            <h2 onClick={toggleMenu2} className='hover:bg-[rgba(245,241,241,0.98)] rounded-md p-2  flex justify-between items-center text-lg md:text-xl lg:text-2xl font-bold'>
               How Important Is UX And What Are The Basics Of UX Design?
-              <button className='' onClick={toggleMenu2}>
+              <button className='' >
                 {isMenuOpen2 ? <IoClose className='text-2xl ml-auto' /> : <LuPlus className='' />}
               </button>
             </h2>
@@ -92,9 +92,9 @@ const Frequency = () => {
           </div>
 
           <div className='border-b-2 border-gray-200'>
-            <h2 className='flex justify-between items-center text-lg md:text-xl lg:text-2xl font-bold'>
+            <h2 onClick={toggleMenu22} className='hover:bg-[rgba(245,241,241,0.98)] rounded-md p-2  flex justify-between items-center text-lg md:text-xl lg:text-2xl font-bold'>
               How To Create An Enticing User Experience?
-              <button className='' onClick={toggleMenu22}>
+              <button className='' >
                 {isMenuOpen22 ? <IoClose className='text-2xl ml-auto' /> : <LuPlus className='' />}
               </button>
             </h2>
@@ -106,9 +106,9 @@ const Frequency = () => {
           </div>
 
           <div className='border-b-2 border-gray-200'>
-            <h2 className='flex justify-between items-center text-lg md:text-xl lg:text-2xl font-bold'>
+            <h2 onClick={toggleMenu3} className='hover:bg-[rgba(245,241,241,0.98)] rounded-md p-2  flex justify-between items-center text-lg md:text-xl lg:text-2xl font-bold'>
               What UI/UX Design Services Does Shanti Infosoft Offer?
-              <button className='' onClick={toggleMenu3}>
+              <button className='' >
                 {isMenuOpen3 ? <IoClose className='text-2xl ml-auto' /> : <LuPlus className='' />}
               </button>
             </h2>
@@ -120,9 +120,9 @@ const Frequency = () => {
           </div>
 
           <div className='border-b-2 border-gray-200'>
-            <h2 className='flex justify-between items-center text-lg md:text-xl lg:text-2xl font-bold'>
+            <h2 onClick={toggleMenu4} className='hover:bg-[rgba(245,241,241,0.98)] rounded-md p-2  flex justify-between items-center text-lg md:text-xl lg:text-2xl font-bold'>
               What Are The Three Stages Of The Product Ideation Process That Shanti Infosoft Follows?
-              <button className='' onClick={toggleMenu4}>
+              <button className='' >
                 {isMenuOpen4 ? <IoClose className='text-2xl ml-auto' /> : <LuPlus className='' />}
               </button>
             </h2>

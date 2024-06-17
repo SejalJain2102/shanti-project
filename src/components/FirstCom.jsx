@@ -1,10 +1,16 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import '../App.css';
 import { Link } from "react-router-dom";
 import 'react-phone-input-2/lib/style.css';
 import PhoneInput from 'react-phone-input-2';
 import './FirstCom.css'; 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 const FirstCom = () => {
+  useEffect(() => {
+    AOS.init();
+}, []);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -58,12 +64,12 @@ const FirstCom = () => {
   return (
     <div style={{backgroundImage:"url('https://shantiinfosoft.com/images/training/banner-bg.svg')", backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
-      backgroundPosition: "center"}}  className='container mx-auto px-4 pt-6 sm:px-8 md:px-16 lg:px-32 xl:px-40'>
+      backgroundPosition: "center"}}  className='container mx-auto  px-4 pt-6 sm:px-8 md:px-16 lg:px-32 xl:px-40'>
       <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 mt-10'>
         {/* Left section */}
         <div className='flex justify-start items-start'>
           <div className='p-7 flex flex-col gap-5'>
-            <h1 className='font-bold text-3xl lg:text-4xl '>
+            <h1 className='custom-font font-bold text-3xl lg:text-4xl '>
               Level Up Your Tech Game <br />
               With Our{' '}
               <span className='underline text-rose-600'>Internships & </span>
@@ -88,7 +94,7 @@ const FirstCom = () => {
         </div>
 
         {/* Right section */}
-        <div className='border rounded bg-white shadow-2xl p-6'>
+        <div className='border rounded-2lg bg-white 2xl:ml-20 shadow-2xl p-6'>
           <h1 className='font-bold text-2xl lg:text-3xl  mb-4'>
             Request a call back
           </h1>
@@ -117,7 +123,7 @@ const FirstCom = () => {
             />
             <PhoneInput
               className='border-b border-black pl-3 p-2 rounded mb-3 w-full'
-              country={'us'}
+              country={'in'}
               value={formData.mobile}
               onChange={handlePhoneChange}
               inputStyle={{ width: '100%', border: '1px solid white' }}
@@ -195,7 +201,7 @@ const FirstCom = () => {
                 <span className='text-[6px] '>Privacy - Terms</span>
               </div>
             </div>
-            <Link to="/submit" ><button
+            <Link to="/submit" ><button 
               className='bg-red-600 tracking-widest font-bold text-sm text-white m-2 px-4 py-2 rounded w-full md:w-36 mx-auto hover:bg-red-700'
               type='submit'
               onMouseEnter={() => setIsHovered(true)}
