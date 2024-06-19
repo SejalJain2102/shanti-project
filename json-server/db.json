@@ -1,0 +1,110 @@
+{
+  "our-placements": [
+    {
+      "id": 1,
+      "name": "Ajeet Saroj",
+      "package": "5 LPA",
+      "position": "Full Stack (MERN) developer",
+      "image": "../src/assets/AjeetSaroj.png",
+      "companyLogo": "../src/assets/ozonsoft-logo.png"
+    },
+    {
+      "id": 2,
+      "name": "Raghav Maheshwari",
+      "package": ".. LPA",
+      "position": "Full Stack (MERN) developer",
+      "image": "../src/assets/RaghavMaheshwari.png",
+      "companyLogo": "../src/assets/bytebillion-logo.png"
+    },
+    {
+      "id": 4,
+      "name": "Raghav Maheshwari",
+      "package": ".. LPA",
+      "position": "Full Stack (MERN) developer",
+      "image": "../src/assets/RaghavMaheshwari.png",
+      "companyLogo": "../src/assets/bytebillion-logo.png"
+    },
+    {
+      "id": 5,
+      "name": "Raghav Maheshwari",
+      "package": ".. LPA",
+      "position": "Full Stack (MERN) developer",
+      "image": "../src/assets/RaghavMaheshwari.png",
+      "companyLogo": "../src/assets/bytebillion-logo.png"
+    },
+    {
+      "id": 3,
+      "name": "Pooja Vishwakarma",
+      "package": "5 LPA",
+      "position": "Full Stack (MERN) developer",
+      "image": "../src/assets/PoojaVishwakarma.png",
+      "companyLogo": "../src/assets/ozonsoft-logo.png"
+    }
+  ],
+  "student-review": [
+    {
+      "id": 1,
+      "quaUrl": "../src/assets/quotes.svg",
+      "heading2": "⭐⭐⭐⭐⭐",
+      "heading3": "MERN Stack",
+      "paragraph": "Thank you for the valuable content in the MERN Developer training program at ShantInfosoft. While the materials have been informative, I've noticed that the learning environment lacks energy. I appreciate the effort put into organizing the program and look forward to contributing to its success.",
+      "mainUrl": "../src/assets/PoojaVishwakarma.png",
+      "heading4": "Pooja Vishwakarma"
+    },
+    {
+      "id": 2,
+      "quaUrl": "../src/assets/quotes.svg",
+      "heading2": "⭐⭐⭐⭐⭐",
+      "heading3": "MERN Stack",
+      "paragraph": "Gain real-world experience through our extensive internship opportunities.",
+      "mainUrl": "../src/assets/AjeetSaroj.png",
+      "heading4": "Ajeet Saroj"
+    },
+    {
+      "id": 3,
+      "quaUrl": "../src/assets/quotes.svg",
+      "heading2": "⭐⭐⭐⭐⭐",
+      "heading3": "MERN Stack",
+      "paragraph": "Shanti Infosoft internship has been an amazing learning experience! Hands-on projects with MERN stack technologies (MongoDB, Express.js, React, Node.js) deepened my understanding and challenged dme in a collaborative environment. The supportive culture and mentorship fostered significant growth. Grateful for the opportunity!",
+      "mainUrl": "../src/assets/abhinay.jpeg",
+      "heading4": "Abhinay Kushwaha"
+    },
+    {
+      "id": 4,
+      "quaUrl": "../src/assets/quotes.svg",
+      "heading2": "⭐⭐⭐⭐⭐",
+      "heading3": "MERN Stack",
+      "paragraph": "Their teaching style and course structure makes web development easy and enjoyable. The hands-on approach and collaborative projects helped me grasp concepts effectively. I feel confident to apply my skills in real-world projects. Looking forward to more learning opportunities.",
+      "mainUrl": "../src/assets/AshishKumarSrivastava.png",
+      "heading4": "Ashish Kumar Srivastava"
+    },
+    {
+      "id": 5,
+      "quaUrl": "../src/assets/quotes.svg",
+      "heading2": "⭐⭐⭐⭐⭐",
+      "heading3": "MERN Stack",
+      "paragraph": "This place is really very good It was my pleasure to work with such a wonderful organization like Shanti Infosoft LLP. I have learned so many things here. Earlier I was not able to crack interviews now I am able to crack Interviews. On the other hand the environment is also very good and everyone has a helping nature.",
+      "mainUrl": "../src/assets/RaghavMaheshwari.png",
+      "heading4": "Raghav Maheshwari"
+    },
+    {
+      "id": 6,
+      "quaUrl": "../src/assets/quotes.svg",
+      "heading2": "⭐⭐⭐⭐⭐",
+      "heading3": "MERN Stack",
+      "paragraph": "Their teaching style and course structure makes web development easy and enjoyable. The hands-on approach and collaborative projects helped me grasp concepts effectively. I feel confident to apply my skills in real-world projects. Looking forward to more learning opportunities.",
+      "mainUrl": "../src/assets/lavisha.jpg",
+      "heading4": "Lavisha Jain"
+    },
+    {
+      "id": 7,
+      "quaUrl": "../src/assets/quotes.svg",
+      "heading2": "⭐⭐⭐⭐⭐",
+      "heading3": "MERN Stack",
+      "paragraph": "Internship at Shanti Infosoft as a MERN stack developer has been an enriching experience. Structured projects, valuable feedback, and mentorship have strengthened my MERN skills and problem-solving abilities. I'm gaining confidence to tackle complex tasks and contribute meaningfully. Grateful for the opportunity and excited to keep learning!",
+      "mainUrl": "../src/assets/Sejal-Jain.png",
+      "heading4": "Sejal Jain"
+    }
+  ],
+  "comments": []
+}

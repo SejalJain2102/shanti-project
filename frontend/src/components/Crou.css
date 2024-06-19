@@ -1,0 +1,35 @@
+/* Crou.css */
+
+.carousel-container {
+  position: relative;
+}
+
+.custom-dot-list-style {
+  position: relative;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.custom-dot-list-style li {
+  display: inline-block;
+  margin: 10 5px;
+}
+
+.custom-dot-list-style li button {
+  border: none;
+  background: #ddd;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+.custom-dot-list-style li.slick-active button {
+  background: #333;
+}
