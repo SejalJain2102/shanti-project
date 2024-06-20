@@ -15,6 +15,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa6";
 import { TiSocialSkypeOutline } from "react-icons/ti";
+import Recaptcha from '../ReCAPTCHA/Recaptcha';
 
 
 const Book = ({onClose}) => {
@@ -170,7 +171,7 @@ const Book = ({onClose}) => {
                 required
               />
             <textarea className="form-control w-full border-b rounded p-2 border-black removeErr" id="message_one" name="message_one" placeholder="Message *" required="" rows="2" type="text" value=""></textarea>
-            <div className='border max-w-72 rounded bg-slate-100 flex justify-between  items-center p-2 mb-3 '>
+            {/* <div className='border max-w-72 rounded bg-slate-100 flex justify-between  items-center p-2 mb-3 '>
               <label className='flex  items-center gap-1'>
                 <input
                   type='checkbox'
@@ -190,9 +191,10 @@ const Book = ({onClose}) => {
                 />
                 <span className='text-[6px] '>Privacy - Terms</span>
               </div>
-            </div>
+            </div> */}
+            <Recaptcha/>
             <Link to="/submit" className='' ><button
-              className='bg-red-600 w-fit ml-auto tracking-widest font-bold text-sm text-white m-2 px-4 py-2 rounded md:w-36 mx-auto hover:bg-red-700'
+              className='bg-red-600 w-fit ml-auto tracking-widest font-bold text-sm text-white m-2 px-4 py-2 rounded md:w-36 mx-auto hover:bg-red-700 '
               type='submit'
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}

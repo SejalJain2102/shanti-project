@@ -26,7 +26,7 @@ const Recaptcha = () => {
         />
         {errors.recaptcha && <div style={{ color: 'red' }}>{errors.recaptcha}</div>}
       </div>
-      <button type="submit">Submit</button>
+      {/* <button type="submit">Submit</button> */}
     </form>
   );
 };

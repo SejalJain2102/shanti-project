@@ -8,6 +8,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import Recaptcha from '../ReCAPTCHA/Recaptcha';
 
+
 const FirstCom = () => {
   useEffect(() => {
     AOS.init();
@@ -68,7 +69,9 @@ const FirstCom = () => {
       backgroundPosition: "center"}}  className='container mx-auto  px-4 pt-6 sm:px-8 md:px-16 lg:px-32 xl:px-40'>
       <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 mt-10'>
         {/* Left section */}
-        <div className='flex justify-start items-start'>
+        <div data-aos="fade-right"
+        data-aos-duration="2000"
+         className='flex justify-start items-start'>
           <div className='p-7 flex flex-col gap-5'>
             <h1 className='custom-font font-bold text-3xl lg:text-4xl '>
               Level Up Your Tech Game <br />
@@ -95,7 +98,7 @@ const FirstCom = () => {
         </div>
 
         {/* Right section */}
-        <div className='border rounded-2lg bg-white 2xl:ml-20 shadow-2xl p-6'>
+        <div data-aos="fade-left" data-aos-duration="2000" className='border rounded-2lg bg-white 2xl:ml-20 shadow-2xl p-6'>
           <h1 className='font-bold text-2xl lg:text-3xl  mb-4'>
             Request a call back
           </h1>
@@ -136,10 +139,17 @@ const FirstCom = () => {
               }}
              
             />
-            <div className='flex flex-col mb-3'>
-              <label className='text-gray-600'>Select Courses</label>
-              <div className='sm:flex xl:flex justify-between items-center lg:grid lg:grid-cols-2 grid grid-cols-2  gap-2 mt-2'>
-                <label className='flex items-center gap-1'>
+            <div className='flex flex-col mb-3 w-36'>
+
+
+              {/* <label className='text-gray-600'>Select Courses</label>
+                <select className='' name="" id="">
+                  <option className='' value="">Node Js</option>
+                  <option className='' value="">React Js</option>
+                  <option className='' value="">Python</option>
+                  <option className='' value="">Digital Marketing</option>
+                </select> */}
+                {/* <label className='flex items-center gap-1'>
                   <input
                     type='checkbox'
                     className='h-4 w-4'
@@ -178,10 +188,9 @@ const FirstCom = () => {
                     onChange={handleChange}
                   />
                   <span>Digital Marketing</span>
-                </label>
-              </div>
+                </label> */}
             </div>
-            <div className=' flex justify-between  items-center p-2 mb-3 '>
+            <div className=' flex justify-between  items-center  mb-3 '>
             <Recaptcha/>
               {/* <label className='flex  items-center gap-1'>
                 <input

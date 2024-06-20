@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Banner = () => {
+  useEffect(() => {
+    AOS.init();
+}, []);
   return (
-    <div className="xl:grid  xl:grid-cols-2 grid-cols-1 space-y-7 xl:h-96 p-4 bg-[#FDECEA] rounded-lg mt-14 m-1 sm:mx-12 md:mx-22 lg:mx-32">
+    <div data-aos="zoom-in" className="xl:grid  xl:grid-cols-2 grid-cols-1 space-y-7 xl:h-96 p-4 bg-[#FDECEA] rounded-lg mt-14 m-1 sm:mx-12 md:mx-22 lg:mx-32">
       <div style={{backgroundImage:"url('../src/assets/bgBan.png')", backgroundSize: "cover", backgroundRepeat:"no-repeat",backgroundPosition:"center",
       
       }} className="flex  flex-col  justify-center items-center gap-5 text-center">

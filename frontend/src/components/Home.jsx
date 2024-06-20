@@ -27,6 +27,7 @@ const Home = () => {
      <Banner/>
      <Frequency/>
      <Crou/>
+     
      {/* <Crouu/> */}
     </div>
   )

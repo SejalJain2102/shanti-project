@@ -95,7 +95,7 @@ const Crou = () => {
         autoPlay={true}
         swipeable={true}
         draggable={true}
-        showDots={true}
+        showDots={false}
         infinite={true}
         partialVisible={false}
         containerClass="carousel-container"

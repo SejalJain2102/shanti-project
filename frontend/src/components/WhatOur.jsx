@@ -50,7 +50,7 @@ const WhatOur = () => {
           autoPlay={true}
           swipeable={true}
           draggable={true}
-          showDots={true}
+          showDots={false}
           infinite={true}
           partialVisible={false}
           containerClass="carousel-container"
@@ -65,7 +65,7 @@ const WhatOur = () => {
                 key={item.id}
                 style={{ margin: '0 10px' }} 
               >
-                <img src={item.quaUrl} alt={`Image ${index}`} className="align-left relative -top-6  h-16"/>
+                <img src="../src/assets/quotes.svg" alt="" className="align-left   h-16 w-16"/>
                 <h2 className="text-start  font-semibold ">
                   {item.heading2}
                 </h2>

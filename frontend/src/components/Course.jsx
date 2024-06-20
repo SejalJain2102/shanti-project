@@ -4,18 +4,23 @@ import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import { FaNodeJs, FaReact, FaPython } from "react-icons/fa";
 import mark from "../assets/marketing-logo.svg";
 import python from "../assets/python-logo.svg";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Course = () => {
+  useEffect(() => {
+    AOS.init();
+}, []);
   const location = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location]);
   return (
     <>
-    <h1 className='text-3xl md:text-4xl lg:text-6xl font-bold mt-14 m-1 sm:mx-24 md:mx-32 lg:mx-56'>Explore Diverse Tech Avenues</h1>
-    <div className='grid lg:grid-cols-2 sm:grid-cols-1 gap-10 mt-10 m-1 sm:mx-24 md:mx-32 lg:mx-56'>
+    <h1 data-aos="fade-down" data-aos-duration="1000" className='text-3xl md:text-4xl lg:text-6xl font-bold mt-14 m-1 sm:mx-24 md:mx-32 lg:mx-56'>Explore Diverse Tech Avenues</h1>
+    <div className='grid xl:grid-cols-2 grid-cols-1 gap-10 mt-10 m-1 sm:mx-24 md:mx-32 lg:mx-56'>
       {/* Node.js Section */}
-      <div className='border rounded-md p-5 space-y-4 h-fit'>
+      <div data-aos="fade-right" data-aos-duration="2000" className='border rounded-md p-5 space-y-4 h-fit'>
         <div className='flex items-center'>
           <FaNodeJs className='text-green-700 text-4xl'/>
           <h1 className='font-bold text-3xl ml-2'>Node.js Training & Internship</h1>
@@ -38,7 +43,7 @@ const Course = () => {
       </div>
 
       {/* React.js Section */}
-      <div className='border rounded-md p-5 space-y-4 lg:mt-6'>
+      <div data-aos="fade-left" data-aos-duration="2000" className='border rounded-md p-5 space-y-4 lg:mt-6'>
         <div className='flex items-center'>
           <FaReact className='text-blue-500 text-4xl'/>
           <h1 className='font-bold text-3xl ml-2'>React.js Training & Internship</h1>
@@ -61,7 +66,7 @@ const Course = () => {
       </div>
 
       {/* Python Section */}
-      <div className='border rounded-md p-5 lg:relative lg:-top-24 h-fit'>
+      <div data-aos="fade-right" data-aos-duration="2000" className='border rounded-md p-5 xl:relative xl:-top-24 h-fit'>
         <div className='flex items-center'>
           <img className='h-8' src={python} alt='Python Logo'/>
           <h1 className='font-bold text-3xl ml-2'>Python Training & Internship</h1>
@@ -84,7 +89,7 @@ const Course = () => {
       </div>
 
       {/* Digital Marketing Section */}
-      <div className='border rounded-md p-5 '>
+      <div data-aos="fade-left" data-aos-duration="2000" className='border rounded-md p-5 '>
         <div className='flex items-center'>
           <img className='h-8' src={mark} alt='Digital Marketing Logo'/>
           <h1 className='font-bold text-3xl ml-2'>Digital Marketing Training & Internship</h1>
