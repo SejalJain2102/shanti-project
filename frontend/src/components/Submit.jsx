@@ -1,15 +1,19 @@
 import React, { useEffect } from 'react'
 import { useLocation } from 'react-router-dom';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 const Submit = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const location = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location]);
   return (
-    <div className='flex justify-center items-center w-full'>
+    <div   className='flex justify-center items-center w-full'>
       <div className='flex p-10 gap-2 sm:w-1/2 flex-col justify-center items-center'>
-        <img src="../src/assets/sucess.png" alt="successful" />
+        <img data-aos="zoom-in" data-aos-duration="2000" src="../src/assets/sucessful.png" alt="successful" />
         <h2 className='font-bold text-3xl sm:text-5xl '>Thankyou !</h2>
         <h3 className='font-bold text-xl sm:text-2xl'>We Have Received Your Request</h3>
         <p className='text-center'>Thank you for your application for the Internship/Training program at <strong>Shanti Infosoft</strong> . We appreciate your interest in joining our team and for taking the time to apply.</p>

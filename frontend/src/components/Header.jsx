@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from "react-router-dom"; 
+import React, { useState, useEffect, useRef } from 'react';
+import { Link, useLocation } from "react-router-dom";
 import { IoMenu, IoClose } from "react-icons/io5";
 import { CiMail } from "react-icons/ci";
 import { SiSkypeforbusiness } from "react-icons/si";
@@ -7,9 +7,42 @@ import { FaWhatsapp } from "react-icons/fa";
 import Book from './Book';
 
 const Header = () => {
+  const [activeButton, setActiveButton] = useState(null);
   const [showBook, setShowBook] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [navbar, setNavbar] = useState(false);
+  const location = useLocation();
+  const menuRef = useRef(null);
+
+  // for remove menubar when we click on window
+  const handleClickOutside = (event) => {
+    if (menuRef.current && !menuRef.current.contains(event.target) && isMenuOpen) {
+      setIsMenuOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isMenuOpen]);
+
+  // for active button based on location
+  useEffect(() => {
+    const pathMap = {
+      "/home": "Home",
+      "/aboutUs": "About Us",
+      "/course": "Courses",
+      "/ourPlace": "Our Placements",
+      "/contactUs": "Contact Us",
+    };
+    setActiveButton(pathMap[location.pathname] || null);
+  }, [location.pathname]);
+
+  const handleButtonClick = (buttonName) => {
+    setActiveButton(buttonName);
+  };
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -74,29 +107,37 @@ const Header = () => {
       
       {/* Main Header */}
       <header className={`w-full p-2 md:p-4 h-16 flex justify-between items-center sticky top-0 z-40 shadow-2xl transition-colors duration-300 ${navbar ? 'bg-red-400 text-white' : 'bg-white'}`}>
-        <img className='hidden sm:block h-14 p-1 md:w-auto' src="../src/assets/ShantiAcademyLogo.png" alt="logo" />
-        <img className='sm:hidden block h-14 p-1' src="../src/assets/ShantiAcademyLogo.png" alt="logo" />
+        <div className='flex justify-center items-center gap-2'>
+          <img className='h-16 p-1 md:w-auto' src="../src/assets/ShantiAcademyLogoS.png" alt="logo" />
+          <h1 className='text-3xl font-bold md:block hidden'>Shanti</h1>
+        </div>
         
         {/* Menu Button for Small screen */}
         <div className="flex items-center gap-3 md:hidden">
           <button className='text-3xl' onClick={toggleMenu}>
-            {isMenuOpen ? <IoClose className='text-[#333] absolute right-3 top-4 hover:text-[#EE4F50] transition transform hover:rotate-90' /> : <IoMenu className='text-[#333] hover:text-[#EE4F50]  transition' />}
+            {isMenuOpen ? <IoClose className='text-[#333] absolute right-3 top-4 hover:text-[#EE4F50] transition transform hover:rotate-90' /> : <IoMenu className='text-[#333] hover:text-[#EE4F50] transition' />}
           </button>
         </div>
         
         {/* Navigation Links */}
-        <div className={`md:flex bg-white md:bg-transparent items-center gap-6 ${isMenuOpen ? 'block' : 'hidden'} md:block`}>
-          <ul className={`flex flex-col md:flex-row font-semibold gap-6 items-center ${isMenuOpen ? 'absolute top-16 right-0 w-full bg-white  shadow-md rounded-md py-2 px-2 md:relative md:top-0 md:bg-transparent md:shadow-none md:rounded-none' : 'hidden md:flex'}`}>
-            <Link to="/home" onClick={closeMenu}><li className='hover:text-[#EE4F50] cursor-pointer'>Home</li></Link>
-            <Link to="/course" onClick={closeMenu}><li className='hover:text-[#EE4F50] cursor-pointer'>Course</li></Link>
-            <Link to="/ourPlace" onClick={closeMenu}><li className='hover:text-[#EE4F50] cursor-pointer'>Our Placements</li></Link>
-            <Link to="/" onClick={closeMenu}><li className='hover:text-[#EE4F50] cursor-pointer'>About Us</li></Link>
-          <Link to="/contactUs"><button className='font-semibold'>Contact Us</button></Link>
+        <div ref={menuRef} className={`md:flex bg-white md:bg-transparent items-center gap-6 ${isMenuOpen ? 'block' : 'hidden'} md:block`}>
+          <ul className={`flex flex-col md:flex-row font-semibold gap-6 items-center ${isMenuOpen ? 'absolute top-16 right-0 w-full bg-white shadow-md rounded-md py-2 px-2 md:relative md:top-0 md:bg-transparent md:shadow-none md:rounded-none' : 'hidden md:flex'}`}>
+            <Link to="/home" onClick={closeMenu}><li
+              className={`text-nowrap ${activeButton === "Home" ? "underline decoration-[#EE4F50] underline-offset-4 text-[#501c1c]" : ""}`}
+              onClick={() => handleButtonClick("Home")}>Home</li></Link>
+            <Link to="/aboutUs" onClick={closeMenu}><li className={`text-nowrap ${activeButton === "About Us" ? "underline decoration-[#EE4F50] underline-offset-4 text-[#501c1c]" : ""}`}
+              onClick={() => handleButtonClick("About Us")}>About Us</li></Link>
+            <Link to="/course" onClick={closeMenu}><li className={`text-nowrap ${activeButton === "Courses" ? "underline decoration-[#EE4F50] underline-offset-4 text-[#501c1c]" : ""}`}
+              onClick={() => handleButtonClick("Courses")}>Courses</li></Link>
+            <Link to="/ourPlace" onClick={closeMenu}><li className={`text-nowrap ${activeButton === "Our Placements" ? "underline decoration-[#EE4F50] underline-offset-4 text-[#501c1c]" : ""}`}
+              onClick={() => handleButtonClick("Our Placements")}>Our Placements</li></Link>
+            <Link to="/contactUs" onClick={closeMenu}><button className={`text-nowrap ${activeButton === "Contact Us" ? "underline decoration-[#EE4F50] underline-offset-4 text-[#501c1c]" : ""}`}
+              onClick={() => handleButtonClick("Contact Us")}>Contact Us</button></Link>
           </ul>
         </div>
       </header>
       <div>
-        { showBook && <Book className='blur-lg' onClose={() => setShowBook(false)} /> }
+        {showBook && <Book className='blur-lg' onClose={() => setShowBook(false)} />}
       </div>
     </>
   )

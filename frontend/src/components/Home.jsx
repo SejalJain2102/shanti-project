@@ -3,13 +3,14 @@ import Frequency from './Frequency'
 import Crou from './Crou'
 import FirstCom from './FirstCom'
 import SecondCom from './SecondCom'
-import Explore from './Course'
+import Course from './Course'
 import OurPlace from './OurPlace'
 import WhatOur from './WhatOur'
 import Banner from './Banner'
 import { useLocation } from 'react-router-dom'
-// import Crouu from './Crouu'
-// import Why from './Why'
+import OverviewC from './OverviewC'
+import OurHiring from './OurHiring'
+
 
 const Home = () => {
   const location = useLocation();
@@ -17,18 +18,18 @@ const Home = () => {
     window.scrollTo(0, 0);
   }, [location]);
   return (
-    <div>
+    <div className=''>
       <FirstCom/>
      <SecondCom/>
      <OurPlace/>
-     <Explore/>
+     <OverviewC/>
+     {/* <Course/> */}
      <WhatOur/>
-     {/* <Why/> */}
+     <OurHiring/>
      <Banner/>
      <Frequency/>
      <Crou/>
      
-     {/* <Crouu/> */}
     </div>
   )
 }

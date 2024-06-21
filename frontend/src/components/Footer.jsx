@@ -15,7 +15,7 @@ const Footer = () => {
       <>
     <div className=' bg-[#031130] grid lg:grid-cols-6 md:grid-cols-4 mt-14 grid-cols-2 lg:px-32 md:px-44 sm:px-32 px-10 pt-24 gap-10 text-white font-semibold '>
       <div className='flex flex-col justify-between items-start h-full col-span-2'>
-        <img className='h-24 ' src="../src/assets/ShantiAcademyLogo.png" alt="logo" />
+        <img className='h-24 ' src="../src/assets/ShantiAcademyLogoS.png" alt="logo" />
         <h1>Let’s Flaunt Your Digital
         Appeal Worldwide!</h1>
         <p>
@@ -62,7 +62,7 @@ const Footer = () => {
     <div className='bg-[#031130] text-white lg:flex justify-between space-y-3 pt-3 items-center sm:px-32 px-10'>
       <p>Copyright © 2024 shantiinfosoft.com   |   All rights reserved.</p>
 
-      <div className='grid sm:grid-cols-6 grid-cols-3 pt-5 items-center justify-center sm:gap-4 gap-1'>
+      <div className='grid  grid-cols-4 pt-5 items-center justify-center sm:gap-4 gap-1'>
 
         <div className='col-span-1 '>
         <div className='circle rounded-full border-r-4 border-white hover:border-red-500  h-12 w-12 transition-transform duration-1200 ease-in-out hover:rotate-360'><a href="https://www.facebook.com/shantiinfosoft"></a></div>
@@ -76,12 +76,12 @@ const Footer = () => {
         <FaLinkedinIn className=' text-4xl p-1  relative -top-10 left-1 '/>
         </a>
         </div>
-        <div className='col-span-1'>
+        {/* <div className='col-span-1'>
         <div className='circle rounded-full border-r-4 border-white hover:border-red-500  h-12 w-12 transition-transform duration-1200 ease-in-out hover:rotate-360'></div>
         <a href="https://x.com/i/flow/login?redirect_after_login=%2Fshantiinfosoft">
         <FaXTwitter className=' text-4xl p-1  relative -top-10 left-1 '/>
         </a>
-        </div>
+        </div> */}
         <div className='col-span-1'>
         <div className='circle rounded-full border-r-4 border-white hover:border-red-500  h-12 w-12 transition-transform duration-1200 ease-in-out hover:rotate-360'></div>
         <a href="https://www.instagram.com/shantiinfosoftllp/">
@@ -91,16 +91,16 @@ const Footer = () => {
         <div className='col-span-1'>
         <div className='circle rounded-full border-r-4 border-white hover:border-red-500  h-12 w-12 transition-transform duration-1200 ease-in-out hover:rotate-360'></div>
         <a href="https://api.whatsapp.com/send/?phone=9981225000&text=Hi%2C+Shantiinfosoft&type=phone_number&app_absent=0">
-        <FaWhatsapp className=' text-4xl p-1  relative -top-10 left-1 '/>
+        <FaWhatsapp className=' text-4xl p-  relative -top-10 left-1 '/>
         </a>
         </div>
-        <div className='col-span-1'>
+        {/* <div className='col-span-1'>
         <div className='circle rounded-full border-r-4 border-white hover:border-red-500  h-12 w-12 transition-transform duration-1200 ease-in-out hover:rotate-360'></div>
         <a href="skype:shanti.infotech">
         <TiSocialSkypeOutline className=' text-4xl p-1  relative -top-10 left-1 '/>
 
         </a>
-        </div>
+        </div> */}
 
       </div>
     </div>

@@ -4,6 +4,14 @@
 
 *{
   font-family: "Barlow", sans-serif;
-    
+    margin: 0%;
+    padding: 0%;
 }
 
+
+@font-face {
+  font-family: 'TrumpGothicEast';
+  src: local('TrumpGothicEast'), url('./fonts/TrumpGothicEast-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}

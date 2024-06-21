@@ -9,12 +9,14 @@ const OurPlace = () => {
     AOS.init();
 }, []);
   
-  const [placements, setPlacements] = useState([]);
-  const location = useLocation();
+const location = useLocation();
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location]);
+useEffect(() => {
+  window.scrollTo(0, 0);
+}, [location]);
+
+// api 
+  const [placements, setPlacements] = useState([]);
 
   useEffect(() => {
     fetch('http://localhost:3000/our-placements')
@@ -25,8 +27,8 @@ const OurPlace = () => {
 
   return (
     <>
-      <h1 data-aos="fade-down" data-aos-duration="1000" className='text-3xl md:text-4xl lg:text-6xl font-bold mt-14 m-1 sm:mx-24 md:mx-32 lg:mx-56 '>Our Placements</h1>
-      <div data-aos="zoom-in" data-aos-duration="2000" className=' grid lg:grid-cols-2 grid-cols-1 xl:grid-cols-3 gap-5 mt-10 m-10 sm:mx-24 md:mx-32 lg:mx-56 '>
+      <h1 data-aos="fade-down"  className='text-3xl md:text-4xl lg:text-6xl font-bold mt-14 m-1 sm:mx-24 md:mx-32 lg:mx-56 '>Our Placements</h1>
+      <div data-aos="zoom-in"  className=' grid lg:grid-cols-2 grid-cols-1 xl:grid-cols-3 gap-5 mt-10 m-10 sm:mx-24 md:mx-32 lg:mx-56 '>
         {placements.map((placement) => (
           <div key={placement.id} className='z-20 bg-[#FDECEA] m-2 py-12 border-b-8 border-red-500 rounded-lg'>
             <h2 style={{ backgroundImage: "url('../src/assets/pack.png')", backgroundSize: "cover", backgroundRepeat: "no-repeat" }}

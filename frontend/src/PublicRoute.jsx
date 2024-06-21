@@ -13,6 +13,7 @@ import Course from './components/Course';
 import OurPlace from './components/OurPlace';
 import ContactUs from './components/ContactUs';
 import Book from './components/Book';
+import AboutUs from './components/AboutUs';
 
 const PublicRoute = () => {
   return (
@@ -22,9 +23,9 @@ const PublicRoute = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/aboutUs" element={<AboutUs />} />
         <Route path="/course" element={<Course />} />
         <Route path="/ourPlace" element={<OurPlace />} />
-        <Route path="/" element={<Footer />} />
 
         <Route path="/book" element={<Book />} />
         <Route path="/contactUs" element={<ContactUs />} />

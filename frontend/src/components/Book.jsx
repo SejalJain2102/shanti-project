@@ -3,7 +3,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import { Link } from "react-router-dom";
 import 'react-phone-input-2/lib/style.css';
-import PhoneInput from 'react-phone-input-2';
 import { CiMail } from "react-icons/ci";
 import { IoIosCall } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
@@ -16,6 +15,8 @@ import { FaInstagram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa6";
 import { TiSocialSkypeOutline } from "react-icons/ti";
 import Recaptcha from '../ReCAPTCHA/Recaptcha';
+import { IoClose } from "react-icons/io5";
+// import axios from 'axios'; 
 
 
 const Book = ({onClose}) => {
@@ -56,13 +57,6 @@ const Book = ({onClose}) => {
     }
   };
 
-  const handlePhoneChange = (value) => {
-    setFormData({
-      ...formData,
-      mobile: value,
-    });
-  };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -73,9 +67,9 @@ const Book = ({onClose}) => {
     }
   };  
   return (
-    <div data-aos="fade-down" className='pt-10 md:flex justify-center items-center  p-2  fixed inset-0  backdrop-blur-sm z-40    '>
+    <div data-aos="fade-down" className='pt-36 md:p-10 md:flex justify-center items-center  p-2  fixed inset-0  backdrop-blur-sm z-40    '>
       <div className='md:flex md:justify-center  lg:items-end md:bg-[#031130] bg-[#031130] md:py-10 p-2 md:h-[520px] text-white '>
-        <h1 onClick={onClose}  className='font-bold text-3xl text-end block md:hidden m-2'>x</h1>
+        <a href='' onClick={onClose}  className='block md:hidden absolute ml-auto  font-bold text-3xl right-3  '><IoClose className='m-2 mt-2  '/></a>
       <div className=' flex flex-col gap-4 bg-[#031130] p-4 '>
         <h1 className='text-3xl font-bold'>Wanna Talk? <br />
         We would love to hear.</h1>
@@ -99,12 +93,12 @@ const Book = ({onClose}) => {
         <FaLinkedinIn className=' text-4xl p-1  relative -top-10 left-1 '/>
         </a>
         </div>
-        <div className=''>
+        {/* <div className=''>
         <div className='circle rounded-full border-r-4 border-white hover:border-red-500  h-12 w-12 transition-transform duration-1200 ease-in-out hover:rotate-360'></div>
         <a href="https://x.com/i/flow/login?redirect_after_login=%2Fshantiinfosoft">
         <FaXTwitter className=' text-4xl p-1  relative -top-10 left-1 '/>
         </a>
-        </div>
+        </div> */}
         <div className=''>
         <div className='circle rounded-full border-r-4 border-white hover:border-red-500  h-12 w-12 transition-transform duration-1200 ease-in-out hover:rotate-360'></div>
         <a href="https://www.instagram.com/shantiinfosoftllp/">
@@ -117,20 +111,20 @@ const Book = ({onClose}) => {
         <FaWhatsapp className=' text-4xl p-1  relative -top-10 left-1 '/>
         </a>
         </div>
-        <div className=''>
+        {/* <div className=''>
         <div className='circle rounded-full border-r-4 border-white hover:border-red-500  h-12 w-12 transition-transform duration-1200 ease-in-out hover:rotate-360'></div>
         <a href="skype:shanti.infotech">
         <TiSocialSkypeOutline className=' text-4xl p-1  relative -top-10 left-1 '/>
 
         </a>
-        </div>
+        </div> */}
 
       </div>
       </div>
       </div>
 
-      <div className='flex flex-col justify-center items-start h-[520px] pt-2 border  bg-white  shadow-2xl'>
-        <a onClick={onClose} className='font-bold text-3xl text-end w-full hidden md:block'>x</a>
+      <div className='flex flex-col justify-center items-start md:w-[500px] h-[520px] pt-2 border  bg-white  shadow-2xl'>
+        <a onClick={onClose} className='md:block hidden relative ml-auto  font-bold text-3xl right-0'><IoClose className='m-2 mt-4 '/></a>
       <div className='max-w-full w-full p-4'>
           <h1 className='font-bold text-2xl lg:text-3xl  mb-4'>
           LET'S WORK TOGETHER
@@ -146,20 +140,14 @@ const Book = ({onClose}) => {
               required
             />
 
-            <PhoneInput
-
+             <input
               className='border-b border-black pl-3 p-2 rounded mb-3 w-full'
-              country={'us'}  
+              type='tel'
+              name='mobile'
+              placeholder='Your Mobile'
               value={formData.mobile}
-              onChange={handlePhoneChange}
-              inputStyle={{ width: '50%', border: '0px solid black' }}
-              containerStyle={{ marginBottom: '1rem' }}
-              inputProps={{
-                name: 'mobile',
-                required: true,
-                autoFocus: false,
-              }}
-             
+              onChange={handleChange}
+              required
             />
               <input
                 className='border-b border-black pl-3 p-2 rounded mb-3 w-full'
