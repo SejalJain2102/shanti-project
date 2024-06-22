@@ -376,7 +376,7 @@ const MyForm = () => {
               name="isRobot"
               onChange={value => setFieldValue('isRobot', value)}
             />
-            <ErrorMessage name='isRobot' component='div' className='text-red-600' />
+            {/* <ErrorMessage name='isRobot' component='div' className='text-red-600' /> */}
           </div>
           <button
             className='bg-red-600 tracking-widest font-bold text-sm text-white m-2 px-4 py-2 rounded w-full md:w-36 mx-auto hover:bg-red-700 transition duration-300 ease-in-out'
