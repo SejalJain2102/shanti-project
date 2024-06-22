@@ -10,6 +10,7 @@ import NodejsBox from './NodejsBox';
 import ReactjsBox from './ReactjsBox';
 import PythonBox from './PythonBox';
 import DigitalMarBox from './DigitalMarBox';
+import Tools from './Tools';
 
 const Course = () => {
   useEffect(() => {
@@ -54,6 +55,8 @@ const Course = () => {
         </div>
 
       </div>
+
+      <Tools/>
     </>
   );
 };

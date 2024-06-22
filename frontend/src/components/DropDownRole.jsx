@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const DropDownRole = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedCourse, setSelectedCourse] = useState("Select Course");
+  const [selectedCourse, setSelectedCourse] = useState("Select Role");
 
   const toggleDropdown = () => setIsOpen(!isOpen);
   const closeDropdown = () => setIsOpen(false);

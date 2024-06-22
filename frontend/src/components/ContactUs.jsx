@@ -13,68 +13,19 @@ import { TiSocialSkypeOutline } from "react-icons/ti";
 import Recaptcha from '../ReCAPTCHA/Recaptcha';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import MyForm from './MyForm';
 
 const ContactUs = () => {
   useEffect(() => {
     AOS.init();
   }, []);
   
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    mobile: '',
-    courses: {
-      nodeJs: false,
-      python: false,
-      reactJs: false,
-      digitalMarketing: false,
-    },
-    isRobot: false,
-  });
-
-  const [isHovered, setIsHovered] = useState(false);
-
-  const handleChange = (e) => {
-    
-    const location = useLocation();
-    useEffect(() => {
-      window.scrollTo(0, 0);
-    }, [location]);
 
 
-    const { name, value, type, checked } = e.target;
-    if (type === 'checkbox') {
-      setFormData({
-        ...formData,
-        courses: {
-          ...formData.courses,
-          [name]: checked,
-        },
-      });
-    } else {
-      setFormData({
-        ...formData,
-        [name]: value,
-      });
-    }
-  };
+  
 
-  const handlePhoneChange = (e) => {
-    setFormData({
-      ...formData,
-      mobile: e.target.value,
-    });
-  };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const response = await axios.post('http://abhinay.com/api/form', formData);
-      console.log('Form submitted:', response.data);
-    } catch (error) {
-      console.error('Form submission error:', error);
-    }
-  };
+
 
   return (
     <div style={{ backgroundImage: "url('../src/assets/map.svg')", backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundPosition: "center" }} className='grid grid-cols-1 lg:grid-cols-2 justify-evenly gap-5 lg:gap-0 items-center mt-3'>
@@ -156,56 +107,7 @@ const ContactUs = () => {
           <h1 className='font-bold text-2xl lg:text-3xl  mb-4'>
             LET'S WORK TOGETHER
           </h1>
-          <form onSubmit={handleSubmit} className='space-y-4'>
-            <input
-              className='border-b border-black pl-3 p-2 rounded  w-full'
-              type='text'
-              name='name'
-              placeholder='Your Name'
-              value={formData.name}
-              onChange={handleChange}
-              required
-            />
-            <input
-              className='border-b border-black pl-3 p-2 rounded mb-3 w-full'
-              type='tel'
-              name='mobile'
-              placeholder='Your Mobile'
-              value={formData.mobile}
-              onChange={handlePhoneChange}
-              required
-            />
-            <input
-              className='border-b border-black pl-3 p-2 rounded mb-3 w-full'
-              type='email'
-              name='email'
-              placeholder='Your Email'
-              value={formData.email}
-              onChange={handleChange}
-              required
-            />
-            <textarea
-              className="form-control w-full border-b rounded p-2 border-black removeErr"
-              id="message_one"
-              name="message_one"
-              placeholder="Message *"
-              required
-              rows="5"
-              type="text"
-              value=""
-            ></textarea>
-            <Recaptcha />
-            <Link to="/submit">
-              <button
-                className='bg-red-600 tracking-widest font-bold text-sm text-white m-2 px-4 py-2 rounded w-full md:w-36 mx-auto hover:bg-red-700'
-                type='submit'
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
-              >
-                {isHovered ? 'Submit' : 'REGISTER'}
-              </button>
-            </Link>
-          </form>
+          <MyForm/>
         </div>
       </div>
     </div>
