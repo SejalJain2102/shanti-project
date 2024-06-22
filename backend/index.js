@@ -25,7 +25,7 @@ app.use(
 
 
 require("./db/connections");
-const Users = require("./Modules/User");
+const Users = require("./Models/User");
 
 app.post("/", async(req,res)=>{
   let user = new Users(req.body);
