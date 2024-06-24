@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 app.use(express.json());
-
+// app.use(cors());
 const allowedOrigins = [
   // "http://49.13.221.129:4000",
   "http://localhost:5173",
