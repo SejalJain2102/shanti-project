@@ -100,8 +100,8 @@ const Header = () => {
             <span className='hidden sm:inline-block ml-1'>+91-9981225000</span>
           </div>
         </div>
-        {/* <button onClick={() => setShowBook(true)} className='bg-[#EE4F50] h-8 px-2 text-white text-sm rounded hidden md:block'>Book Free Consultation</button>
-        <button onClick={() => setShowBook(true)} className='bg-[#EE4F50] h-8 px-2 text-white text-sm rounded md:hidden block'>Enroll</button> */}
+        <button onClick={() => setShowBook(true)} className='bg-[#EE4F50] h-8 px-2 text-white text-sm rounded hidden md:block'>Book Free Counselling</button>
+        <button onClick={() => setShowBook(true)} className='bg-[#EE4F50] h-8 px-2 text-white text-sm rounded md:hidden block'>Book</button>
       </nav>
       <hr />
       

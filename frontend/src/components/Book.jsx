@@ -13,11 +13,7 @@ import { FaLinkedinIn } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa6";
-import { TiSocialSkypeOutline } from "react-icons/ti";
-import axios from 'axios';
-import Recaptcha from '../ReCAPTCHA/Recaptcha';
-import DropDownButton from './DropDownButton';
-import DropDownRole from './DropDownRole';
+
 import MyForm from './MyForm';
 
 const Book = ({ onClose }) => {
@@ -31,13 +27,16 @@ const Book = ({ onClose }) => {
   return (
     <div data-aos="fade-down" className=' md:p-1 flex justify-center items-center  p-2  fixed inset-0  backdrop-blur-sm z-40'>
       <div className='pt-36 md:p-1 md:flex justify-center items-center  p-2'>
-      <div className='md:flex md:justify-  items-center md:bg-[#031130] bg-[#031130]  p-2 h-fit md:h-[670px] text-white'>
-        <a href='' onClick={onClose} className=' md:hidden relative ml-auto  font-bold text-3xl '>
-          <IoClose className=' ml-auto' />
-        </a>
+      <div className='md:flex md:justify-  items-start md:bg-[#031130] bg-[#031130]  p-2 h-fit md:h-[535px] text-white'>
+        
         <div className='flex flex-col gap-4 bg-[#031130] p-4'>
-          <h1 className='text-3xl font-bold'>Wanna Talk? <br />
+         <p className='flex justify-center items-start'>
+         <h1 className='text-3xl font-bold'>Wanna Talk? <br />
             We would love to hear.</h1>
+            <a href='' onClick={onClose} className=' md:hidden relative ml-auto  font-bold text-3xl '>
+          <IoClose className=' ml-auto' />
+           </a>
+         </p>
           <h2 className='text-[#6f6e6e] text-sm font-semibold'>For sales queries, contact us at:</h2>
           <h6 className='text-[#626480] text-sm font-semibold'>Email</h6>
           <a className='font-semibold' href="">info@shantiinfosoft.com</a>
@@ -88,14 +87,17 @@ const Book = ({ onClose }) => {
         </div>
       </div>
 
-      <div className='flex flex-col justify-center items-start md:w-[500px] h-fit md:h-[670px]  p-1 border  bg-white  shadow-2xl'>
-        <a onClick={onClose} className='md:block hidden relative ml-auto  font-bold text-3xl right-0 top-2'>
-          <IoClose className='m-2 mt-4' />
-        </a>
-        <div className='max-w-full w-full p-4'>
+      <div className='flex flex-col justify-start items-start md:w-[500px] h-fit md:h-[535px]  p-1 border  bg-white  shadow-2xl'>
+       
+        <div className=' max-w-full w-full p-4'>
+          <div className='flex justify-between items-center'>
           <h1 className='font-bold text-2xl lg:text-3xl  mb-4'>
             LET'S WORK TOGETHER
           </h1>
+          <a href='' onClick={onClose} className='md:block hidden relative   font-bold text-3xl right-0 -top-2'>
+          <IoClose className=' ' />
+          </a>
+          </div>
           <MyForm/>
         </div>
       </div>

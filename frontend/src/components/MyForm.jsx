@@ -1,7 +1,3 @@
-
-
-
-
 import React from 'react';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
@@ -27,14 +23,6 @@ const MyForm = () => {
       .min(10, 'Mobile number must be at least 10 digits')
       .max(15, 'Mobile number must be less than 15 digits')
       .required('Mobile number is required'),
-    // courses: Yup.object().shape({
-    //   nodeJs: Yup.boolean(),
-    //   python: Yup.boolean(),
-    //   reactJs: Yup.boolean(),
-    //   digitalMarketing: Yup.boolean(),
-    // }).test('at-least-one-course', 'Select at least one course', value =>
-    //   value.nodeJs || value.python || value.reactJs || value.digitalMarketing
-    // ),
 
     courses: Yup.string().required('Please select a course'),
     currentlyYouAre: Yup.string().required('Currently You Are is required'),
@@ -44,7 +32,7 @@ const MyForm = () => {
   const handleSubmit = async (values, { setSubmitting }) => {
     try {
       const response = await axios.post('http://localhost:5000', values);
-      console.log('Form submitted:', response.data); // Debugging line
+      console.log('Form submitted:', response.data); 
       navigate("/submit");
     } catch (error) {
       console.error('Form submission error:', error);
@@ -77,7 +65,7 @@ const MyForm = () => {
               name='name'
               placeholder='Your Name'
             />
-            <ErrorMessage name='name' component='div' className='text-red-600' />
+            <ErrorMessage name='name' component='div' className='text-red-600 absolute' />
           </div>
           <div>
             <Field
@@ -86,7 +74,7 @@ const MyForm = () => {
               name='email'
               placeholder='Your Email'
             />
-            <ErrorMessage name='email' component='div' className='text-red-600' />
+            <ErrorMessage name='email' component='div' className='text-red-600 absolute' />
           </div>
           <div>
             <Field
@@ -95,16 +83,16 @@ const MyForm = () => {
               name='mobile'
               placeholder='Your Mobile'
             />
-            <ErrorMessage name='mobile' component='div' className='text-red-600' />
+            <ErrorMessage name='mobile' component='div' className='text-red-600 absolute' />
           </div>
           <div className='flex mb-3 gap-4'>
             <p>
               <DropDownButton name="courses" />
-              <ErrorMessage name='courses' component='div' className='text-red-600' />
+              <ErrorMessage name='courses' component='div' className='text-red-600 absolute' />
             </p>
             <p>
               <DropDownRole name="currentlyYouAre" />
-              <ErrorMessage name='currentlyYouAre' component='div' className='text-red-600' />
+              <ErrorMessage name='currentlyYouAre' component='div' className='text-red-600 absolute' />
             </p>
           </div>
           <div className=' mb-3'>

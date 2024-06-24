@@ -3,19 +3,39 @@ import "./Crou.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useLocation } from 'react-router-dom';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+
+const responsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3,
+    slidesToSlide: 3 // optional, default to 1.
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+    slidesToSlide: 2 // optional, default to 1.
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+    slidesToSlide: 1 // optional, default to 1.
+  }
+};
 
 const OurPlace = () => {
   useEffect(() => {
     AOS.init();
-}, []);
-  
-const location = useLocation();
+  }, []);
 
-useEffect(() => {
-  window.scrollTo(0, 0);
-}, [location]);
+  const location = useLocation();
 
-// api 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
+  // API data
   const [placements, setPlacements] = useState([]);
 
   useEffect(() => {
@@ -27,10 +47,17 @@ useEffect(() => {
 
   return (
     <>
-      <h1 data-aos="fade-down"  className='text-3xl md:text-4xl lg:text-6xl font-bold mt-14 m-1 sm:mx-24 md:mx-32 lg:mx-56 '>Our Placements</h1>
-      <div data-aos="zoom-in"  className=' grid lg:grid-cols-2 grid-cols-1 xl:grid-cols-3 gap-5 mt-10 m-10 sm:mx-24 md:mx-32 lg:mx-56 '>
+      <h1 data-aos="fade-down" className='text-3xl md:text-4xl lg:text-6xl font-bold mt-14 m-2 sm:mx-24 md:mx-32 lg:mx-56'>Our Placements</h1>
+      <Carousel
+        responsive={responsive}
+        infinite={true}
+        containerClass="carousel-container"
+        removeArrowOnDeviceType={['tablet', 'mobile',"desktop"]}
+        itemClass="carousel-item"
+        className='mt-10 m-10 sm:mx-24 md:mx-32 lg:mx-56'
+      >
         {placements.map((placement) => (
-          <div key={placement.id} className='z-20 bg-[#FDECEA] m-2 py-12 border-b-8 border-red-500 rounded-lg'>
+          <div key={placement.id} className='z-20 bg-[#FDECEA]   m-3 py-12 border-b-8 border-red-500 rounded-lg'>
             <h2 style={{ backgroundImage: "url('../src/assets/pack.png')", backgroundSize: "cover", backgroundRepeat: "no-repeat" }}
               className='place text-sm rounded-s-full rounded-t-full  h-8 w-44 transition-transform -rotate-45 relative -left-11 -top-5 flex justify-center items-center font-semibold text-white '>
               Package : {placement.package}
@@ -43,7 +70,7 @@ useEffect(() => {
             </div>
           </div>
         ))}
-      </div>
+      </Carousel>
     </>
   );
 };
