@@ -3,7 +3,6 @@ import Frequency from './Frequency'
 import Crou from './Crou'
 import FirstCom from './FirstCom'
 import SecondCom from './SecondCom'
-import Course from './Course'
 import OurPlace from './OurPlace'
 import WhatOur from './WhatOur'
 import Banner from './Banner'
@@ -23,7 +22,6 @@ const Home = () => {
      <SecondCom/>
      <OurPlace/>
      <OverviewC/>
-     {/* <Course/> */}
      <WhatOur/>
      <OurHiring/>
      <Banner/>

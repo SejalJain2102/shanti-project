@@ -6,7 +6,6 @@ import { FaLinkedinIn } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa6";
-import { TiSocialSkypeOutline } from "react-icons/ti";
 
 
 

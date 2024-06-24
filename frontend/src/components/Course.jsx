@@ -1,9 +1,5 @@
 import React, { useEffect } from 'react';
 import { Link, useLocation } from "react-router-dom";
-import { IoMdCheckmarkCircleOutline } from "react-icons/io";
-import { FaNodeJs, FaReact } from "react-icons/fa";
-import mark from "../assets/marketing-logo.svg";
-import python from "../assets/python-logo.svg";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import NodejsBox from './NodejsBox';

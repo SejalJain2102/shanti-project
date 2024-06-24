@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import '../App.css';
-import { Link } from 'react-router-dom';
 import 'react-phone-input-2/lib/style.css';
 import './FirstCom.css';
 import AOS from 'aos';

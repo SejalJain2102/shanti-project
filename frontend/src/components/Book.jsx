@@ -1,16 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
-import { Formik, Field, Form, ErrorMessage } from 'formik';
-import * as Yup from 'yup';
 import { IoClose } from "react-icons/io5";
-import { CiMail } from "react-icons/ci";
-import { IoIosCall } from "react-icons/io";
-import { FaLocationDot } from "react-icons/fa6";
-import { SiSkypeforbusiness } from "react-icons/si";
 import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
-import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa6";
 

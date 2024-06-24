@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './Shadow.css'; // Assuming you have custom styles for hover effect
+import './Shadow.css'; //  custom styles for hover effect
 
 const Tools = () => {
   // Settings for the carousel

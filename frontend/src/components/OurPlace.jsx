@@ -49,6 +49,7 @@ const OurPlace = () => {
     <>
       <h1 data-aos="fade-down" className='text-3xl md:text-4xl lg:text-6xl font-bold mt-14 m-2 sm:mx-24 md:mx-32 lg:mx-56'>Our Placements</h1>
       <Carousel
+        autoPlaySpeed={1000}
         responsive={responsive}
         infinite={true}
         containerClass="carousel-container"

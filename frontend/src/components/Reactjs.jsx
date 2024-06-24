@@ -4,16 +4,13 @@ import { TiTick } from "react-icons/ti";
 import { MdComputer } from "react-icons/md";
 import { SlCalender } from "react-icons/sl";
 import { ImPower } from "react-icons/im";
-import { HiMiniUserGroup } from "react-icons/hi2";
 import { RiMedal2Fill } from "react-icons/ri";
 import { IoMdPerson } from "react-icons/io";
 import { FaRegAddressCard } from "react-icons/fa6";
 import { TbWorld } from "react-icons/tb";
 import { GiPublicSpeaker } from "react-icons/gi";
 import { RiContactsFill } from "react-icons/ri";
-import { IoVideocam } from "react-icons/io5";
 import { SiAuthelia } from "react-icons/si";
-
 import { useLocation } from 'react-router-dom';
 import { HiUserGroup } from "react-icons/hi2";
 import Tools from './Tools';
