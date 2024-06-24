@@ -67,7 +67,7 @@ const DropDownRole = ({ name }) => {
       </div>
       {isOpen && (
         <ul className="absolute mt-1  bg-white border border-gray-300 rounded shadow-lg z-10">
-          <li className="py-2 px-3 hover:bg-slate-200 cursor-pointer" onClick={handleOptionClick}>Student</li>
+          <li className="py-2 px-3 hover:bg-slate-200 cursor-pointer" onClick={handleOptionClick}>student</li>
           <li className="py-2 px-3 hover:bg-slate-200 cursor-pointer" onClick={handleOptionClick}>Trainer</li>
           <li className="py-2 px-3 hover:bg-slate-200 cursor-pointer" onClick={handleOptionClick}>Working</li>
         </ul>

@@ -47,7 +47,7 @@ const Recaptcha = ({ name }) => {
   };
 
   return (
-    <div>
+    <div className='mt-3'>
       <ReCAPTCHA
         sitekey="6LeLsvspAAAAAE-O9jxhVBc9H_A375hRimMQmgPW"
         onChange={handleRecaptchaChange}

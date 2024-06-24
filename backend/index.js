@@ -26,15 +26,34 @@ app.use(
 
 require("./db/connections");
 const Users = require("./Models/User");
+const OurPlacements = require("./Models/ourPlacements");
 
+
+// submit form 
 app.post("/", async(req,res)=>{
   let user = new Users(req.body);
   let result = await user.save();
   res.send(result);
 })
 
+
+// our placements post 
+app.post("/ourPlacements", async(req,res)=>{
+  let ourPlacement = new OurPlacements(req.body);
+  let result = await ourPlacement.save();
+  res.send(result);
+})
+
+
+app.get("/get-ourPlacements", async(rep,res)=>{
+  let result = await OurPlacements.find();
+  res.send(result);
+})
+
+
+
 const PORT = 5000;
 
 app.listen(PORT,()=>{
-  console.log(`port run on http://localhost:${5000}`);
+  console.log(`port run on http://localhost:${PORT}`);
 })

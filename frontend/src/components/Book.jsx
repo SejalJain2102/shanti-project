@@ -25,35 +25,8 @@ const Book = ({ onClose }) => {
     AOS.init();
   }, []);
 
-  const [isHovered, setIsHovered] = useState(false);
 
-  const validationSchema = Yup.object().shape({
-    name: Yup.string()
-      .required('Name is required'),
-    email: Yup.string()
-      .email('Invalid email')
-      .required('Email is required'),
-    mobile: Yup.string()
-      .matches(/^[0-9]+$/, 'Mobile number must be digits')
-      .min(10, 'Mobile number must be at least 10 digits')
-      .max(15, 'Mobile number must be less than 15 digits')
-      .required('Mobile number is required'),
-    isRobot: Yup.boolean()
-      .oneOf([true], 'Please verify you are not a robot')
-      .required('Robot verification is required'),
-  });
 
-  const handleSubmit = async (values, { setSubmitting, resetForm }) => {
-    try {
-      const response = await axios.post('http://abhinay.com/api/form', values);
-      console.log('Form submitted:', response.data);
-      resetForm();
-    } catch (error) {
-      console.error('Form submission error:', error);
-    } finally {
-      setSubmitting(false);
-    }
-  };
 
   return (
     <div data-aos="fade-down" className=' md:p-1 flex justify-center items-center  p-2  fixed inset-0  backdrop-blur-sm z-40'>

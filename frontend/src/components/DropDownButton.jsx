@@ -9,18 +9,10 @@ const DropDownButton = ({ name }) => {
   const toggleDropdown = () => setIsOpen(!isOpen);
   const closeDropdown = () => setIsOpen(false);
 
-  const handleOptionClick = (course) => {
-    setFieldValue(name, {
-      ...field.value,
-      [course]: !field.value[course],
-    });
+  const handleOptionClick = (event) => {
+    setFieldValue(name, event.target.innerText);
     setIsOpen(false);
   };
-
-  const selectedCourses = Object.keys(field.value)
-    .filter((key) => field.value[key])
-    .map((key) => key.charAt(0).toUpperCase() + key.slice(1))
-    .join(', ');
 
   return (
     <div className="relative mt-4 w-34" onMouseLeave={closeDropdown}>
@@ -30,20 +22,32 @@ const DropDownButton = ({ name }) => {
         onClick={toggleDropdown}
         onMouseEnter={toggleDropdown}
       >
-        {selectedCourses || 'Select Course'}
+        {field.value || 'Select Course'}
       </div>
       {isOpen && (
         <ul className="absolute mt-1 bg-white border border-gray-300 rounded shadow-lg z-10">
-          <li className="py-2 px-3 hover:bg-slate-200 cursor-pointer" onClick={() => handleOptionClick('nodeJs')}>
+          <li
+            className="py-2 px-3 hover:bg-slate-200 cursor-pointer"
+            onClick={handleOptionClick}
+          >
             NodeJs
           </li>
-          <li className="py-2 px-3 hover:bg-slate-200 cursor-pointer" onClick={() => handleOptionClick('reactJs')}>
+          <li
+            className="py-2 px-3 hover:bg-slate-200 cursor-pointer"
+            onClick={handleOptionClick}
+          >
             ReactJs
           </li>
-          <li className="py-2 px-3 hover:bg-slate-200 cursor-pointer" onClick={() => handleOptionClick('python')}>
+          <li
+            className="py-2 px-3 hover:bg-slate-200 cursor-pointer"
+            onClick={ handleOptionClick}
+          >
             Python
           </li>
-          <li className="py-2 px-3 hover:bg-slate-200 cursor-pointer" onClick={() => handleOptionClick('digitalMarketing')}>
+          <li
+            className="py-2 px-3 hover:bg-slate-200 cursor-pointer"
+            onClick={ handleOptionClick}
+          >
             Digital Marketing
           </li>
         </ul>

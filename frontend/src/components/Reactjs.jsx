@@ -16,6 +16,7 @@ import { SiAuthelia } from "react-icons/si";
 
 import { useLocation } from 'react-router-dom';
 import { HiUserGroup } from "react-icons/hi2";
+import Tools from './Tools';
 
 
 const Reactjs = () => {
@@ -119,6 +120,7 @@ const Reactjs = () => {
           </div>
         </div>
       </div>
+      <Tools/>
     </>
   );
 };

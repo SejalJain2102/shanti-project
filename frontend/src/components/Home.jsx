@@ -10,7 +10,6 @@ import Banner from './Banner'
 import { useLocation } from 'react-router-dom'
 import OverviewC from './OverviewC'
 import OurHiring from './OurHiring'
-import Tools from './Tools'
 
 
 const Home = () => {
@@ -29,7 +28,6 @@ const Home = () => {
      <OurHiring/>
      <Banner/>
      <Frequency/>
-     <Tools/>
      <Crou/>
      
     </div>

@@ -1,6 +1,6 @@
 import AdminRoute from './AdminRoute';
 import './App.css'
-import Demo from './Demo';
+// import Demo from './Demo';
 import PublicRoute from './PublicRoute';
 
 

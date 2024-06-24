@@ -16,6 +16,7 @@ import { SiAuthelia } from "react-icons/si";
 
 import { useLocation } from 'react-router-dom';
 import { HiUserGroup } from "react-icons/hi2";
+import Tools from './Tools';
 
 
 const DigitalMar = () => {
@@ -119,6 +120,7 @@ const DigitalMar = () => {
           </div>
         </div>
       </div>
+      <Tools/>
     </>
   );
 };

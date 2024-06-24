@@ -19,7 +19,7 @@ useEffect(() => {
   const [placements, setPlacements] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/our-placements')
+    fetch('http://localhost:5000/get-ourPlacements')
       .then(response => response.json())
       .then(data => setPlacements(data))
       .catch(error => console.error('Error fetching data:', error));
