@@ -47,7 +47,7 @@ const MyForm = () => {
         name: '',
         email: '',
         mobile: '',
-        courses: 'Reactjs', 
+        courses: 'Reactjs',  // Set default value to 'student'
         currentlyYouAre: 'Student', // Set default value to 'student'
         isRobot: '',
       }}

@@ -5,6 +5,7 @@ import './FirstCom.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import MyForm from './MyForm';
+import { Link } from 'react-router-dom';
 
 const FirstCom = () => {
   useEffect(() => {
@@ -42,9 +43,9 @@ const FirstCom = () => {
               with leading IT companies in Indore.
             </p>
             <div className='flex gap-4 items-center justify-start'>
-              <button className='px-4 py-2 tracking-widest font-bold text-sm text-white bg-red-600 rounded hover:bg-red-700'>
+            <Link to="/aboutUs"><button className='px-4 py-2 tracking-widest font-bold text-sm text-white bg-red-600 rounded hover:bg-red-700'>
                 Explore
-              </button>
+              </button></Link>
               <img
                 className='h-8'
                 src='https://shantiinfosoft.com/images/training/testimonial.png'

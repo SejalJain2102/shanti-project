@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import job from "../assets/job.svg"
 
 const Banner = () => {
   useEffect(() => {
@@ -22,7 +23,7 @@ const Banner = () => {
       <div style={{backgroundImage:"url('../src/assets/bgBan2.png')", backgroundSize: "cover",backgroundPosition:"center",
       
       }} className="flex    flex-col justify-center gap-4  items-center text-center">
-            <img className='h-48' src="https://shantiinfosoft.com/images/training/jobsupport.svg" alt="banner" />
+            <img className='h-48' src={job} alt="banner" />
         <button className="bg-red-500 w-fit px-4 text-white tracking-widest font-bold text-sm py-4 text-center  rounded-md">RESERVE YOUR FREE SPOT!</button>
       </div>
     </div>

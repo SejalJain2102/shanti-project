@@ -14,6 +14,7 @@ import OurPlace from './components/OurPlace';
 import ContactUs from './components/ContactUs';
 import Book from './components/Book';
 import AboutUs from './components/AboutUs';
+import Blogs from './components/Blogs';
 
 const PublicRoute = () => {
   return (
@@ -24,11 +25,12 @@ const PublicRoute = () => {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/aboutUs" element={<AboutUs />} />
+        <Route path="/blogs" element={<Blogs />} />
         <Route path="/course" element={<Course />} />
         <Route path="/ourPlace" element={<OurPlace />} />
+        <Route path="/contactUs" element={<ContactUs />} />
 
         <Route path="/book" element={<Book />} />
-        <Route path="/contactUs" element={<ContactUs />} />
         <Route path="/submit" element={<Submit />} />
 
         <Route path="/course/reactjs" element={<Reactjs />} />

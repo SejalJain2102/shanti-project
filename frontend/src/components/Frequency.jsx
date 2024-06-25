@@ -8,6 +8,7 @@ const Frequency = () => {
   useEffect(() => {
     AOS.init();
   }, []);
+  
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleMenu = (index) => {
@@ -32,12 +33,11 @@ const Frequency = () => {
         </div>
 
         <div className='space-y-6'>
-
-          <div data-aos="fade-right"
-     data-aos-offset="300"
-     data-aos-easing="ease-in-sine"
-      className='border-b-2 border-gray-200'>
-            <h2 onClick={() => toggleMenu(0)} className='hover:bg-[rgba(245,241,241,0.98)] rounded-md p-2 flex justify-between items-center text-lg md:text-xl lg:text-2xl font-bold'>
+          <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" className='border-b-2 border-gray-200'>
+            <h2 
+              onClick={() => toggleMenu(0)} 
+              className={`hover:bg-[rgba(245,241,241,0.98)] rounded-md p-2 flex justify-between items-center text-lg md:text-xl lg:text-2xl font-bold ${openIndex === 0 ? 'text-red-500' : 'text-black'}`}
+            >
               What is The Difference Between UI And UX Design?
               <button>
                 {openIndex === 0 ? <IoClose className='text-2xl ml-auto' /> : <LuPlus />}
@@ -50,11 +50,11 @@ const Frequency = () => {
             </div>
           </div>
 
-          <div data-aos="fade-left"
-     data-aos-offset="300"
-     data-aos-easing="ease-in-sine"
-      className='border-b-2 border-gray-200'>
-            <h2 onClick={() => toggleMenu(1)} className='hover:bg-[rgba(245,241,241,0.98)] rounded-md p-2 flex justify-between items-center text-lg md:text-xl lg:text-2xl font-bold'>
+          <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" className='border-b-2 border-gray-200'>
+            <h2 
+              onClick={() => toggleMenu(1)} 
+              className={`hover:bg-[rgba(245,241,241,0.98)] rounded-md p-2 flex justify-between items-center text-lg md:text-xl lg:text-2xl font-bold ${openIndex === 1 ? 'text-red-500' : 'text-black'}`}
+            >
               What Are The Expected UX Deliverables?
               <button>
                 {openIndex === 1 ? <IoClose className='text-2xl ml-auto' /> : <LuPlus />}
@@ -67,11 +67,11 @@ const Frequency = () => {
             </div>
           </div>
 
-          <div data-aos="fade-right"
-     data-aos-offset="300"
-     data-aos-easing="ease-in-sine"
-      className='border-b-2 border-gray-200'>
-            <h2 onClick={() => toggleMenu(2)} className='hover:bg-[rgba(245,241,241,0.98)] rounded-md p-2 flex justify-between items-center text-lg md:text-xl lg:text-2xl font-bold'>
+          <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" className='border-b-2 border-gray-200'>
+            <h2 
+              onClick={() => toggleMenu(2)} 
+              className={`hover:bg-[rgba(245,241,241,0.98)] rounded-md p-2 flex justify-between items-center text-lg md:text-xl lg:text-2xl font-bold ${openIndex === 2 ? 'text-red-500' : 'text-black'}`}
+            >
               How Important Is UX And What Are The Basics Of UX Design?
               <button>
                 {openIndex === 2 ? <IoClose className='text-2xl ml-auto' /> : <LuPlus />}
@@ -84,11 +84,11 @@ const Frequency = () => {
             </div>
           </div>
 
-          <div data-aos="fade-left"
-     data-aos-offset="300"
-     data-aos-easing="ease-in-sine"
-      className='border-b-2 border-gray-200'>
-            <h2 onClick={() => toggleMenu(3)} className='hover:bg-[rgba(245,241,241,0.98)] rounded-md p-2 flex justify-between items-center text-lg md:text-xl lg:text-2xl font-bold'>
+          <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" className='border-b-2 border-gray-200'>
+            <h2 
+              onClick={() => toggleMenu(3)} 
+              className={`hover:bg-[rgba(245,241,241,0.98)] rounded-md p-2 flex justify-between items-center text-lg md:text-xl lg:text-2xl font-bold ${openIndex === 3 ? 'text-red-500' : 'text-black'}`}
+            >
               How To Create An Enticing User Experience?
               <button>
                 {openIndex === 3 ? <IoClose className='text-2xl ml-auto' /> : <LuPlus />}
@@ -101,11 +101,11 @@ const Frequency = () => {
             </div>
           </div>
 
-          <div data-aos="fade-right"
-     data-aos-offset="300"
-     data-aos-easing="ease-in-sine"
-      className='border-b-2 border-gray-200'>
-            <h2 onClick={() => toggleMenu(4)} className='hover:bg-[rgba(245,241,241,0.98)] rounded-md p-2 flex justify-between items-center text-lg md:text-xl lg:text-2xl font-bold'>
+          <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" className='border-b-2 border-gray-200'>
+            <h2 
+              onClick={() => toggleMenu(4)} 
+              className={`hover:bg-[rgba(245,241,241,0.98)] rounded-md p-2 flex justify-between items-center text-lg md:text-xl lg:text-2xl font-bold ${openIndex === 4 ? 'text-red-500' : 'text-black'}`}
+            >
               What UI/UX Design Services Does Shanti Infosoft Offer?
               <button>
                 {openIndex === 4 ? <IoClose className='text-2xl ml-auto' /> : <LuPlus />}
@@ -118,11 +118,11 @@ const Frequency = () => {
             </div>
           </div>
 
-          <div data-aos="fade-left"
-     data-aos-offset="300"
-     data-aos-easing="ease-in-sine"
-      className='border-b-2 border-gray-200'>
-            <h2 onClick={() => toggleMenu(5)} className='hover:bg-[rgba(245,241,241,0.98)] rounded-md p-2 flex justify-between items-center text-lg md:text-xl lg:text-2xl font-bold'>
+          <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" className='border-b-2 border-gray-200'>
+            <h2 
+              onClick={() => toggleMenu(5)} 
+              className={`hover:bg-[rgba(245,241,241,0.98)] rounded-md p-2 flex justify-between items-center text-lg md:text-xl lg:text-2xl font-bold ${openIndex === 5 ? 'text-red-500' : 'text-black'}`}
+            >
               What Are The Three Stages Of The Product Ideation Process That Shanti Infosoft Follows?
               <button>
                 {openIndex === 5 ? <IoClose className='text-2xl ml-auto' /> : <LuPlus />}
@@ -134,6 +134,7 @@ const Frequency = () => {
               </p>
             </div>
           </div>
+
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import first from "../assets/PoojaVishwakarma.png"
 import second from "../assets/AjeetSaroj.png"
@@ -38,7 +38,7 @@ const AboutCom = () => {
             </Carousel>
       </div>
 
-      <div data-aos="fade-left"  className='col-span-2'>
+      <div  className='col-span-2'>
       <h1 style={{ fontFamily: 'TrumpGothicEast' }} className='text-3xl md:text-4xl lg:text-6xl font-bold  text-start  '>About Shanti!</h1>
          <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta ex omnis veniam est eius non eveniet magni animi unde, dolores quibusdam alias similique accusamus illo expedita sunt? Doloribus, beatae illum enim neque repellat totam iste necessitatibus fugit quis porro sit earum omnis facere id cumque nesciunt ducimus rerum laudantium facilis.

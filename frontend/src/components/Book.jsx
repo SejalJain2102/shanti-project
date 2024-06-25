@@ -32,22 +32,22 @@ const Book = ({ onClose }) => {
          </p>
           <h2 className='text-[#6f6e6e] text-sm font-semibold'>For sales queries, contact us at:</h2>
           <h6 className='text-[#626480] text-sm font-semibold'>Email</h6>
-          <a className='font-semibold' href="">info@shantiinfosoft.com</a>
+          <a className='font-semibold' href="">training@shantiinfosoft.com</a>
           <h6 className='text-[#626480] text-sm font-semibold'>Phone</h6>
-          <h3 className='font-semibold'>+91-9981225000</h3>
+          <h3 className='font-semibold'>+91-8815531673</h3>
 
           <div className='flex  justify-start items-center    '>
             {/* Social media links */}
             <div className='grid  grid-cols-4 pt-5 items-center justify-center sm:gap-4 gap-1 '>
               <div className='col-span-1 '>
-                <div className='circle rounded-full border-r-4 border-white hover:border-red-500  h-12 w-12 transition-transform duration-1200 ease-in-out hover:rotate-360'><a href="https://www.facebook.com/shantiinfosoft"></a></div>
-                <a href="https://www.facebook.com/shantiinfosoft">
+                <div className='circle rounded-full border-r-4 border-white hover:border-red-500  h-12 w-12 transition-transform duration-1200 ease-in-out hover:rotate-360'><a href=" https://www.facebook.com/profile.php?id=61556123675098"></a></div>
+                <a href=" https://www.facebook.com/profile.php?id=61556123675098">
                   <FaFacebookF className=' text-4xl p-1  relative -top-10 left-1 ' />
                 </a>
               </div>
               <div className='col-span-1'>
                 <div className='circle rounded-full border-r-4 border-white hover:border-red-500  h-12 w-12 transition-transform duration-1200 ease-in-out hover:rotate-360'></div>
-                <a href="https://www.linkedin.com/company/shantiinfosoft/?originalSubdomain=in">
+                <a href="https://www.linkedin.com/company/101599937/admin/dashboard/">
                   <FaLinkedinIn className=' text-4xl p-1  relative -top-10 left-1 ' />
                 </a>
               </div>
@@ -59,7 +59,7 @@ const Book = ({ onClose }) => {
               </div> */}
               <div className='col-span-1'>
                 <div className='circle rounded-full border-r-4 border-white hover:border-red-500  h-12 w-12 transition-transform duration-1200 ease-in-out hover:rotate-360'></div>
-                <a href="https://www.instagram.com/shantiinfosoftllp/">
+                <a href="https://www.instagram.com/shantiacademyt/">
                   <FaInstagram className=' text-4xl p-1  relative -top-10 left-1 ' />
                 </a>
               </div>

@@ -33,6 +33,7 @@ const Header = () => {
     const pathMap = {
       "/home": "Home",
       "/aboutUs": "About Us",
+      "/blogs": "Blogs",
       "/course": "Courses",
       "/ourPlace": "Our Placements",
       "/contactUs": "Contact Us",
@@ -89,15 +90,15 @@ const Header = () => {
         <div className='flex gap-3 items-center font-semibold text-sm'>
           <div className='border-r-2 px-2 flex items-center hover:text-orange-400'>
             <CiMail className='text-lg' />
-            <span className='hidden sm:inline-block ml-1'>info@shantiinfosoft.com</span>
+            <span className='hidden sm:inline-block ml-1'>training@shantiinfosoft.com</span>
           </div>
-          <div className='border-r-2 px-2 flex items-center hover:text-orange-400'>
+          {/* <div className='border-r-2 px-2 flex items-center hover:text-orange-400'>
             <SiSkypeforbusiness className='text-lg' />
             <span className='hidden sm:inline-block ml-1'>shanti.infotech</span>
-          </div>
+          </div> */}
           <div className='flex items-center pl-1 hover:text-orange-400'>
             <FaWhatsapp className='text-lg' />
-            <span className='hidden sm:inline-block ml-1'>+91-9981225000</span>
+            <span className='hidden sm:inline-block ml-1'>+91-8815531673</span>
           </div>
         </div>
         <button onClick={() => setShowBook(true)} className='bg-[#EE4F50] h-8 px-2 text-white text-sm rounded hidden md:block'>Book Free Counselling</button>
@@ -106,7 +107,7 @@ const Header = () => {
       <hr />
       
       {/* Main Header */}
-      <header className={`w-full p-2 md:p-4 h-16 flex justify-between items-center sticky top-0 z-40 shadow-2xl transition-colors duration-300 ${navbar ? 'bg-red-400 text-white' : 'bg-white'}`}>
+      <header className={`w-full p-2 md:p-4 h-16 flex justify-between items-center sticky top-0 z-40 shadow-2xl transition-colors duration-300 ${navbar ? 'bg-red-400 md:text-white' : 'bg-white'}`}>
         <div className='flex justify-center items-center gap-2'>
           <img className='h-16 p-1 md:w-auto' src="../src/assets/ShantiAcademyLogoS.png" alt="logo" />
           <h1 className='text-3xl font-bold md:block hidden'>Shanti</h1>
@@ -127,6 +128,8 @@ const Header = () => {
               onClick={() => handleButtonClick("Home")}>Home</li></Link>
             <Link to="/aboutUs" onClick={closeMenu}><li className={`text-nowrap ${activeButton === "About Us" ? "underline decoration-[#EE4F50] underline-offset-4 text-[#501c1c]" : ""}`}
               onClick={() => handleButtonClick("About Us")}>About Us</li></Link>
+            <Link to="/blogs" onClick={closeMenu}><li className={`text-nowrap ${activeButton === "Blogs" ? "underline decoration-[#EE4F50] underline-offset-4 text-[#501c1c]" : ""}`}
+              onClick={() => handleButtonClick("Blogs")}>Blogs</li></Link>
             <Link to="/course" onClick={closeMenu}><li className={`text-nowrap ${activeButton === "Courses" ? "underline decoration-[#EE4F50] underline-offset-4 text-[#501c1c]" : ""}`}
               onClick={() => handleButtonClick("Courses")}>Courses</li></Link>
             <Link to="/ourPlace" onClick={closeMenu}><li className={`text-nowrap ${activeButton === "Our Placements" ? "underline decoration-[#EE4F50] underline-offset-4 text-[#501c1c]" : ""}`}

@@ -2,6 +2,10 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import slack from "../assets/slack.png"
+import vscode from "../assets/vscode1.png"
+import postman from "../assets/postman1.png"
+import github from "../assets/github1.png"
 import './Shadow.css'; //  custom styles for hover effect
 
 const Tools = () => {
@@ -11,10 +15,19 @@ const Tools = () => {
     arrows: true,
     dots: true,
     infinite: true,
-    speed: 200,
+    speed: 2000,
     slidesToShow: 4,
     slidesToScroll: 1,
     responsive: [
+      {
+        breakpoint: 1324,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
       {
         breakpoint: 1024,
         settings: {
@@ -29,6 +42,8 @@ const Tools = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          infinite: true,
+          dots: true,
         },
       },
       {
@@ -36,6 +51,8 @@ const Tools = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          infinite: true,
+          dots: true,
         },
       },
     ],
@@ -51,7 +68,7 @@ const Tools = () => {
         <div className="relative shadow-carousel hover:shadow-lg">
           <img
             className='hover:scale-110 ease-in-out duration-300 h-44 md:h-36 w-full'
-            src="https://mms.businesswire.com/media/20230322005274/en/761650/23/postman-logo-vert-2018.jpg"
+            src={postman}
             alt="postman"
           />
         </div>
@@ -59,15 +76,15 @@ const Tools = () => {
         <div className="relative shadow-carousel hover:shadow-lg">
           <img
             className='hover:scale-110 ease-in-out duration-300  h-44 md:h-36 w-full'
-            src="https://miro.medium.com/v2/resize:fit:1358/1*0LS0sRb2kjHtIIWtKAt-iw.png"
+            src={vscode}
             alt="vs code"
           />
         </div>
         {/* GitHub */}
         <div className="relative shadow-carousel hover:shadow-lg">
           <img
-            className='hover:scale-110 ease-in-out duration-300  h-44 md:h-36 w-full'
-            src="https://www.webfx.com/wp-content/uploads/2022/08/github-logo.png"
+            className='hover:scale-110 ease-in-out duration-300 py-4  h-44 md:h-36 w-full'
+            src={github}
             alt="github"
           />
         </div>
@@ -75,7 +92,7 @@ const Tools = () => {
         <div className="relative shadow-carousel hover:shadow-lg">
           <img
             className='hover:scale-110 ease-in-out duration-300  h-44 md:h-36 w-full'
-            src="https://image.cnbcfm.com/api/v1/image/105684220-1547727181154mb_slack_01.jpg?v=1547727329&w=929&h=523&vtcrop=y"
+            src={slack}
             alt="slack"
           />
         </div>

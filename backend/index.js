@@ -1,5 +1,6 @@
 const express = require("express");   
 const cors = require("cors");
+const nodemailer = require('nodemailer');
 const app = express();
 app.use(express.json());
 // app.use(cors());
@@ -49,6 +50,35 @@ app.get("/get-ourPlacements", async(rep,res)=>{
   let result = await OurPlacements.find();
   res.send(result);
 })
+
+// Create a Nodemailer transporter using Gmail service
+const transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: 'abhinayarkb@gmail.com',
+    pass: 'Abhirama@2004'
+  },
+  tls: {
+    rejectUnauthorized: false // Disable SSL verification (not recommended for production)
+  }
+});
+
+// Email message options
+const mailOptions = {
+  from: 'abhinayark.@gmail.com', // Sender address (should be same as auth.user)
+  subject: 'Submit Email', // Subject line
+};
+
+// Send email
+transporter.sendMail(mailOptions, function(error, info) {
+  if (error) {
+    console.error('Error sending email:', error);
+  } else {
+    console.log('Email sent:', info.response);
+  }
+});
+
+
 
 
 
