@@ -13,8 +13,9 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
       <div className=' '>
-    <div className=' bg-[#031130] grid  xl:grid-cols-4 lg:grid-cols-2 sm:grid-cols-2 mt-14 pb-4 grid-cols-1 lg:px-32 md:px-32 sm:px-24 px-10 pt-24 gap-6 text-white font-semibold '>
-      <div className='flex flex-col justify-between items-start h-full col-span-1'>
+    <div className=' bg-[#031130] grid   md:grid-cols-3  mt-14 pb-8 grid-cols-1 lg:px-32 md:px-32 sm:px-24 px-10 py-16 gap-6 text-white font-semibold '>
+      <div className='flex flex-col md:items-center h-full col-span-1'>
+        <div>
         <img className='h-24 ' src="../src/assets/ShantiAcademyLogoS.png" alt="logo" />
         <h1>Let’s Flaunt Your Digital
         Appeal Worldwide!</h1>
@@ -24,8 +25,10 @@ const Footer = () => {
         <a href="#" className='flex justify-start items-center gap-2 hover:text-orange-400 '> <FaWhatsapp/>+91-8815531673</a>
         </p>
       </div>
+      </div>
 
-      <div className='col-span-1'>
+      <div className='col-span-1 flex flex-col  md:items-center'>
+        <div>
         <h1 className='mb-3 text-red-500 tracking-widest' >QUICK LINKS</h1>
         <ul>
           <Link to="/home"><li className='hover:text-red-700 hover:translate-x-3 ease-in duration-300 '>Home</li></Link>
@@ -36,8 +39,10 @@ const Footer = () => {
           <Link to="/contactUs"><li className='hover:text-red-700 hover:translate-x-3 ease-in duration-300 '>Contact Us</li></Link>
         </ul>
       </div>
+      </div>
 
-      <div className='col-span-1 '>
+      <div className='col-span-1 flex flex-col  md:items-center'>
+        <div>
         <h1 className='mb-3 text-red-500 text-lg tracking-widest' >TRAINING</h1>
         <ul className='flex flex-col '>
         <Link to="/course/reactjs"><li className='hover:text-red-700 hover:translate-x-3 ease-in duration-300' >  React Js Developer</li></Link>
@@ -46,16 +51,17 @@ const Footer = () => {
           <Link to="/course/digitalMar"><li className='hover:text-red-700 hover:translate-x-3 ease-in duration-300 '>Digital Markinter</li></Link>
         </ul>
       </div>
+      </div>
 
 
-      <div className='col-span-1'>
+      {/* <div className='col-span-1'>
         <h1 className='mb-3 text-red-500 tracking-widest' >LEGAL</h1>
         <ul>
           <li className='hover:text-red-700 hover:translate-x-3 ease-in duration-300 '>Privacy Policy</li>
           <li className='hover:text-red-700 hover:translate-x-3 ease-in duration-300 '>Terms & Conditions</li>
           <li className='hover:text-red-700 hover:translate-x-3 ease-in duration-300 '>Privacy Practices</li>
         </ul>
-      </div>
+      </div> */}
     </div>
 
      <hr />

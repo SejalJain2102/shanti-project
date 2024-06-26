@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { useLocation } from 'react-router-dom';
+import BlogFrirst from './BlogFrirst';
 
 const Blogs = () => {
   const location = useLocation();
@@ -8,7 +9,8 @@ const Blogs = () => {
   }, [location]);
   return (
     <div>
-      Work in Progress
+      <h1 className='text-center font-bold sm:text-5xl text-3xl m-3'>Popular Blogs</h1>
+      <BlogFrirst/>
     </div>
   )
 }

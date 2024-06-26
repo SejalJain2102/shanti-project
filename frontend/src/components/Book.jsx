@@ -91,7 +91,7 @@ const Book = ({ onClose }) => {
           <IoClose className=' ' />
           </a>
           </div>
-          <MyForm/>
+          <MyForm    />
         </div>
       </div>
     </div>

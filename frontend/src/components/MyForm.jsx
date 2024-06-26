@@ -23,7 +23,6 @@ const MyForm = () => {
       .min(10, 'Mobile number must be at least 10 digits')
       .max(15, 'Mobile number must be less than 15 digits')
       .required('Mobile number is required'),
-
     courses: Yup.string().required('Please select a course'),
     currentlyYouAre: Yup.string().required('Currently You Are is required'),
     isRobot: Yup.string().required('Please verify you are not a robot')
@@ -34,6 +33,9 @@ const MyForm = () => {
       const response = await axios.post('http://localhost:5000', values);
       console.log('Form submitted:', response.data); 
       navigate("/submit");
+      window.location.reload();
+
+      
     } catch (error) {
       console.error('Form submission error:', error);
     } finally {
@@ -47,14 +49,13 @@ const MyForm = () => {
         name: '',
         email: '',
         mobile: '',
-        courses: 'Reactjs',  // Set default value to 'student'
-        currentlyYouAre: 'Student', // Set default value to 'student'
+        courses: 'Reactjs',  // Set default value to 'Reactjs'
+        currentlyYouAre: 'Student', // Set default value to 'Student'
         isRobot: '',
       }}
-      
-      
       validationSchema={validationSchema}
       onSubmit={handleSubmit}
+      
     >
       {({ isSubmitting, setFieldValue }) => (
         <Form className='space-y-4'>
@@ -103,6 +104,7 @@ const MyForm = () => {
             {/* <ErrorMessage name='isRobot' component='div' className='text-red-600' /> */}
           </div>
           <button
+       
             className='bg-red-600 tracking-widest font-bold text-sm text-white m-2 px-4 py-2 rounded w-full md:w-36 mx-auto hover:bg-red-700 transition duration-300 ease-in-out'
             type='submit'
             disabled={isSubmitting}
@@ -116,8 +118,3 @@ const MyForm = () => {
 };
 
 export default MyForm;
-
-
-
-
-

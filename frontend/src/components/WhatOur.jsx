@@ -25,7 +25,7 @@ const WhatOur = () => {
   const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/student-review")
+    fetch("http://localhost:5000/get-reviews")
       .then((response) => response.json())
       .then((data) => setReviews(data))
       .catch((error) => console.error("Error fetching data:", error));
@@ -67,18 +67,18 @@ const WhatOur = () => {
               >
                 <img src="../src/assets/quotes.svg" alt="" className="align-left   h-16 w-16"/>
                 <h2 className="text-start  font-semibold ">
-                  {item.heading2}
+                  {item.star}
                 </h2>
                 <h3 className="text-start font-semibold text-lg  ">
-                  {item.heading3}
+                  {item.position}
                 </h3>
                 <p className="text-start leading-10 font-semilight  text-sm sm:text-base lg:text-lg">
-                  {item.paragraph}
+                  {item.comment}
                 </p>
                 <div className="flex justify-start items-center gap-2  ">
                   <img src={item.mainUrl} alt={`Image ${index}`} className=" w-8 h-8 rounded-full border border-red-500"/>
                   <h4 className="text-start font-semilight  text-lg">
-                    {item.heading4}
+                    {item.name}
                   </h4>
                 </div>
               </div>
