@@ -20,7 +20,7 @@ const Frequency = () => {
   };
 
   return (
-    <div data-aos="zoom-in-down" className='pt-10 m-5 sm:mx-24 md:mx-32 lg:mx-56'>
+    <div data-aos="zoom-in-down" className='pt-10 mb-10 m-5 sm:mx-24 md:mx-32 lg:mx-56'>
       <div className='space-y-3'>
         <div className='flex flex-col justify-center items-start my-10 relative'>
           <h1 className='text-3xl md:text-4xl lg:text-6xl font-bold text-slate-200 text-start mt-10 mb-6 relative'>
@@ -33,7 +33,7 @@ const Frequency = () => {
         </div>
 
         <div className='space-y-6'>
-          <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" className='border-b-2 border-gray-200'>
+          <div className='border-b-2 border-gray-200'>
             <h2 
               onClick={() => toggleMenu(0)} 
               className={`hover:bg-[rgba(245,241,241,0.98)] rounded-md p-2 flex justify-between items-center text-lg md:text-xl lg:text-2xl font-bold ${openIndex === 0 ? 'text-red-500' : 'text-black'}`}
@@ -50,7 +50,7 @@ const Frequency = () => {
             </div>
           </div>
 
-          <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" className='border-b-2 border-gray-200'>
+          <div className='border-b-2 border-gray-200'>
             <h2 
               onClick={() => toggleMenu(1)} 
               className={`hover:bg-[rgba(245,241,241,0.98)] rounded-md p-2 flex justify-between items-center text-lg md:text-xl lg:text-2xl font-bold ${openIndex === 1 ? 'text-red-500' : 'text-black'}`}
@@ -67,7 +67,7 @@ const Frequency = () => {
             </div>
           </div>
 
-          <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" className='border-b-2 border-gray-200'>
+          <div className='border-b-2 border-gray-200'>
             <h2 
               onClick={() => toggleMenu(2)} 
               className={`hover:bg-[rgba(245,241,241,0.98)] rounded-md p-2 flex justify-between items-center text-lg md:text-xl lg:text-2xl font-bold ${openIndex === 2 ? 'text-red-500' : 'text-black'}`}
@@ -84,7 +84,7 @@ const Frequency = () => {
             </div>
           </div>
 
-          <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" className='border-b-2 border-gray-200'>
+          <div className='border-b-2 border-gray-200'>
             <h2 
               onClick={() => toggleMenu(3)} 
               className={`hover:bg-[rgba(245,241,241,0.98)] rounded-md p-2 flex justify-between items-center text-lg md:text-xl lg:text-2xl font-bold ${openIndex === 3 ? 'text-red-500' : 'text-black'}`}
@@ -101,7 +101,7 @@ const Frequency = () => {
             </div>
           </div>
 
-          <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" className='border-b-2 border-gray-200'>
+          <div className='border-b-2 border-gray-200'>
             <h2 
               onClick={() => toggleMenu(4)} 
               className={`hover:bg-[rgba(245,241,241,0.98)] rounded-md p-2 flex justify-between items-center text-lg md:text-xl lg:text-2xl font-bold ${openIndex === 4 ? 'text-red-500' : 'text-black'}`}
@@ -118,7 +118,7 @@ const Frequency = () => {
             </div>
           </div>
 
-          <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" className='border-b-2 border-gray-200'>
+          <div className='border-b-2 border-gray-200'>
             <h2 
               onClick={() => toggleMenu(5)} 
               className={`hover:bg-[rgba(245,241,241,0.98)] rounded-md p-2 flex justify-between items-center text-lg md:text-xl lg:text-2xl font-bold ${openIndex === 5 ? 'text-red-500' : 'text-black'}`}

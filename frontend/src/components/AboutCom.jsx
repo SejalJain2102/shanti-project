@@ -16,10 +16,10 @@ const AboutCom = () => {
   return (
     <div className='mt-24'>
     
-    <div className='lg:grid grid-cols-3 grid-flow-col justify-center items-center gap-16 md:m-10 sm:m-5 m-2 sm:mx-12 md:mx-24 lg:mx-32'>
-      <div className='ease-in-out  duration-300 hover:scale-110 col-span-1' style={{width:"100%"}}>
+    <div className='lg:grid grid-cols-3 grid-flow-col justify-center items-center gap-16 md:m-10 sm:m-5 m-2 sm:mx-12 md:mx-24 lg:mx-32 space-y-10'>
+      <div className='ease-in-out  duration-300 hover:scale-110 col-span-1 flex items-center justify-center' style={{width:"100%"}}>
       <Carousel
-      className=''
+      className='w-96 lg:w-auto'
       autoPlay={true}
       infiniteLoop
       interval={3000}

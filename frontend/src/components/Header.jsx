@@ -93,15 +93,16 @@ const Header = () => {
         <div className='flex gap-3 items-center font-semibold text-sm'>
           <div className='border-r-2 px-2 flex items-center hover:text-orange-400'>
             <CiMail className='text-lg' />
-            <span className='hidden sm:inline-block ml-1'>training@shantiinfosoft.com</span>
+            <a href="mailto:training@shantiinfosoft.com" className='hidden sm:inline-block ml-1'>training@shantiinfosoft.com</a >
           </div>
+          {/* href="mailto:training@shantiinfosoft.com" */}
           {/* <div className='border-r-2 px-2 flex items-center hover:text-orange-400'>
             <SiSkypeforbusiness className='text-lg' />
             <span className='hidden sm:inline-block ml-1'>shanti.infotech</span>
           </div> */}
           <div className='flex items-center pl-1 hover:text-orange-400'>
             <FaWhatsapp className='text-lg' />
-            <span className='hidden sm:inline-block ml-1'>+91-8815531673</span>
+            <a href="tel:+918815531673" className='hidden sm:inline-block ml-1'>+91-8815531673</a>
           </div>
         </div>
         <button onClick={() => setShowBook(true)} className='bg-[#EE4F50] h-8 px-2 text-white text-sm rounded hidden md:block'>Book Free Counselling</button>

@@ -33,7 +33,7 @@ const Course = () => {
         <DigitalMarBox/>
       </div>
 
-      <div className='grid md:grid-cols-2 gap-4 lg:gap-7   mt-10 mx-4 sm:mx-8 md:mx-12 lg:mx-20 xl:mx-32'>
+      <div className='grid md:grid-cols-2 gap-4 lg:gap-7 mb-10  mt-10 mx-4 sm:mx-8 md:mx-12 lg:mx-20 xl:mx-32'>
         <div className='flex flex-col gap-4 lg:gap-7'>
         {/* Node.js Section */}
         <NodejsBox/>

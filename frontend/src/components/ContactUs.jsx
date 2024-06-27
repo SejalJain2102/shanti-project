@@ -29,9 +29,9 @@ const ContactUs = () => {
 
 
   return (
-    <div style={{ backgroundImage: "url('../src/assets/map.svg')", backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundPosition: "center" }} className='grid grid-cols-1 lg:grid-cols-2 justify-evenly gap-5 lg:gap-0 items-center mt-3'>
-      <div className='flex justify-center items-center '>
-        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" className='max-w-96 space-y-5'>
+    <div style={{ backgroundImage: "url('../src/assets/map.svg')", backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundPosition: "center" }} className='grid grid-cols-1 lg:grid-cols-2 justify-evenly gap-5 lg:gap-0 items-center mt-3 mb-10'>
+      <div className='flex justify-center items-center p-3'>
+        <div  className='max-w-96 space-y-5'>
           <p className='border-l-4 border-red-500 p-4'>
             <h1 className='text-4xl font-bold'>Let’s Talk</h1><br />
             Looking for a website design company ? <br /><br />
@@ -42,14 +42,14 @@ const ContactUs = () => {
             <CiMail className='col-span-1 text-4xl  text-red-500 ' />
             <p className='col-span-5 flex flex-col'>
               <label className='text-xs font-semibold' htmlFor="">Email</label>
-              <a className='font-normal hover:text-red-500' >training@shantiinfosoft.com</a>
+              <a href="mailto:training@shantiinfosoft.com" className='font-normal hover:text-red-500' >training@shantiinfosoft.com</a>
             </p>
           </div>
           <div className='grid grid-cols-6 '>
             <IoIosCall className='col-span-1 text-4xl  text-red-500 ' />
             <p className='col-span-5 flex flex-col'>
               <label className='text-xs font-semibold' htmlFor="">Phone</label>
-              <span className='font-normal hover:text-red-500'> +91-8815531673</span>
+              <a href="tel:+918815531673" className='font-normal hover:text-red-500'> +91-8815531673</a>
             </p>
           </div>
           <div className='grid grid-cols-6'>
@@ -103,7 +103,7 @@ const ContactUs = () => {
 
         </div>
       </div>
-      <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" className='flex justify-center items-start'>
+      <div  className='flex justify-center items-start'>
         <div className='border rounded-lg bg-white max-w-96 shadow-2xl p-6'>
           <h1 className='font-bold text-2xl lg:text-3xl  mb-4'>
             LET'S WORK TOGETHER

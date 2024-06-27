@@ -19,7 +19,7 @@ const Book = ({ onClose }) => {
 
   return (
     <div data-aos="fade-down" className=' md:p-1 flex justify-center items-center  p-2  fixed inset-0  backdrop-blur-sm z-40'>
-      <div className='pt-36 md:p-1 md:flex justify-center items-center  p-2'>
+      <div className='pt-40 md:p-5   md:flex justify-center items-center  p-2'>
       <div className='md:flex md:justify-  items-start md:bg-[#031130] bg-[#031130]  p-2 h-fit md:h-[535px] text-white'>
         
         <div className='flex flex-col gap-4 bg-[#031130] p-4'>
@@ -32,9 +32,9 @@ const Book = ({ onClose }) => {
          </p>
           <h2 className='text-[#6f6e6e] text-sm font-semibold'>For sales queries, contact us at:</h2>
           <h6 className='text-[#626480] text-sm font-semibold'>Email</h6>
-          <a className='font-semibold' href="">training@shantiinfosoft.com</a>
+          <a href="mailto:training@shantiinfosoft.com" className='font-semibold' href="">training@shantiinfosoft.com</a>
           <h6 className='text-[#626480] text-sm font-semibold'>Phone</h6>
-          <h3 className='font-semibold'>+91-8815531673</h3>
+          <a href="tel:+918815531673" className='font-semibold'>+91-8815531673</a >
 
           <div className='flex  justify-start items-center    '>
             {/* Social media links */}

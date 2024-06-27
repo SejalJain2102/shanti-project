@@ -59,7 +59,7 @@ const Tools = () => {
   };
 
   return (
-    <div className='mt-14 m-1 sm:mx-24 md:mx-32 lg:mx-56'>
+    <div className='mt-14 m-4  sm:mx-24 md:mx-32 lg:mx-56'>
       <h1 className='text-3xl md:text-4xl lg:text-6xl font-bold text-center p-10'>Tools</h1>
 
       {/* Carousel */}

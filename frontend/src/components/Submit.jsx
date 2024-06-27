@@ -31,7 +31,7 @@ const Submit = () => {
         <h3 className='font-bold text-xl sm:text-2xl'>We Have Received Your Request</h3>
         <p className='text-center'>Thank you for your application for the Internship/Training program at <strong>Shanti Infosoft</strong>. We appreciate your interest in joining our team and for taking the time to apply.</p>
         <p className='text-center'>We have received your application and will review it carefully. Our team will be in touch with you shortly regarding the next steps in the application process.</p>
-        <p className='text-center'>If you have any questions or need further information, please feel free to contact us at <strong>training@shantiinfosoft.com</strong> or <strong>+91-8815531673</strong></p>
+        <p className='text-center'>If you have any questions or need further information, please feel free to contact us at <a href="mailto:training@shantiinfosoft.com"><strong>training@shantiinfosoft.com</strong></a> or <a href="tel:+918815531673"><strong>+91-8815531673</strong></a></p>
         <p className='text-center'>Thank you again for your interest in <strong>Shanti Infosoft</strong>. We look forward to the possibility of working with you.</p>
       </div>
     </div>

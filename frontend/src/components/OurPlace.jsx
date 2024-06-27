@@ -55,7 +55,7 @@ const OurPlace = () => {
         containerClass="carousel-container"
         removeArrowOnDeviceType={['tablet', 'mobile',"desktop"]}
         itemClass="carousel-item"
-        className='mt-10 m-10 sm:mx-24 md:mx-32 lg:mx-56'
+        className='mt-10 m-10 mb-10 sm:mx-24 md:mx-32 lg:mx-56'
       >
         {placements.map((placement) => (
           <div key={placement.id} className='z-20 bg-[#FDECEA]   m-3 py-12 border-b-8 border-red-500 rounded-lg'>

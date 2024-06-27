@@ -13,16 +13,15 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
       <div className=' '>
-    <div className=' bg-[#031130] grid   md:grid-cols-3  mt-14 pb-8 grid-cols-1 lg:px-32 md:px-32 sm:px-24 px-10 py-16 gap-6 text-white font-semibold '>
+    <div className=' bg-[#031130] grid   md:grid-cols-3   pb-8 grid-cols-1 lg:px-32 md:px-32 sm:px-24 px-10 py-16 gap-6 text-white font-semibold '>
       <div className='flex flex-col md:items-center h-full col-span-1'>
         <div>
         <img className='h-24 ' src="../src/assets/ShantiAcademyLogoS.png" alt="logo" />
         <h1>Let’s Flaunt Your Digital
         Appeal Worldwide!</h1>
         <p>
-        <a href="#" className='flex justify-start items-center gap-2 hover:text-orange-400 '><CiMail/>training@shantiinfosoft.com</a>
-        {/* <a href="#" className='flex justify-start items-center gap-2 hover:text-orange-400 '> <SiSkypeforbusiness/> shanti.infotech</a> */}
-        <a href="#" className='flex justify-start items-center gap-2 hover:text-orange-400 '> <FaWhatsapp/>+91-8815531673</a>
+        <a href="mailto:training@shantiinfosoft.com" className='flex justify-start items-center gap-2 hover:text-orange-400 '><CiMail/>training@shantiinfosoft.com</a>
+        <a href="tel:+918815531673" className='flex justify-start items-center gap-2 hover:text-orange-400 '> <FaWhatsapp/>+91-8815531673</a>
         </p>
       </div>
       </div>
@@ -67,7 +66,7 @@ const Footer = () => {
      <hr />
 
     <div className='bg-[#031130] text-white lg:flex justify-between space-y-3 pt-1 items-center sm:px-32 px-10'>
-      <p>Copyright © 2024 shantiinfosoft.com   |   All rights reserved.</p>
+      <p>Copyright © 2024 training@shantiinfosoft.com   |   All rights reserved.</p>
 
       <div className='grid  grid-cols-4 pt-5 items-center justify-center sm:gap-4 gap-1'>
 

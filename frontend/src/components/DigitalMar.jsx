@@ -32,7 +32,7 @@ const DigitalMar = () => {
           <p className='font-bold text-md flex justify-center items-center gap-2'><TiTick className='text-green-500 border border-black rounded-full' /> 30 weeks full-time program with offline classes</p>
           <p className='font-bold text-md flex justify-center items-center gap-2'><TiTick className='text-green-500 border border-black rounded-full' /> Top recruiters from PayTM, Walmart, Amazon</p>
         </div>
-        <img  className='hidden md:block' src="../src/assets/contactBan.png" alt="" />
+        {/* <img  className='hidden md:block' src="../src/assets/contactBan.png" alt="" /> */}
       </div>
 
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 p-3 mt-14 m-1 sm:mx-24 md:mx-32 lg:mx-56 gap-4'>
