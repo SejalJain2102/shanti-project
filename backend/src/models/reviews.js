@@ -6,7 +6,7 @@ const reviewsSchema = new mongoose.Schema({
   star: String,
   postion: String,
   comment: String,
-  // image: String,
+  image: String,
   name: String,
   
   

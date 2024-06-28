@@ -76,7 +76,7 @@ const WhatOur = () => {
                   {item.comment}
                 </p>
                 <div className="flex justify-start items-center gap-2  ">
-                  <img src={item.mainUrl} alt={`Image ${index}`} className=" w-8 h-8 rounded-full border border-red-500"/>
+                  <img src={`http://localhost:5000${item.image}`} alt={`Image ${index}`} className=" w-8 h-8 rounded-full border border-red-500"/>
                   <h4 className="text-start font-semilight  text-lg">
                     {item.name}
                   </h4>

@@ -8,7 +8,7 @@ const usersSchema = new mongoose.Schema({
   email: String,
   mobile: String,
   courses: {
-    type: String, // Expecting an array of strings
+    type: String, 
     enum: ["Nodejs", "Python", "Reactjs", "DigitalMarketing"],
     default: "Reactjs"
   },

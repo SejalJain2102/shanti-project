@@ -41,7 +41,10 @@ const OurPlace = () => {
   useEffect(() => {
     fetch('http://localhost:5000/get-ourPlacements')
       .then(response => response.json())
-      .then(data => setPlacements(data))
+      .then(data => {
+        console.log('Fetched data:', data); // Log the fetched data
+        setPlacements(data);
+      })
       .catch(error => console.error('Error fetching data:', error));
   }, []);
 
@@ -49,25 +52,25 @@ const OurPlace = () => {
     <>
       <h1 data-aos="fade-down" className='text-3xl md:text-4xl lg:text-6xl font-bold mt-14 m-2 sm:mx-24 md:mx-32 lg:mx-56'>Our Placements</h1>
       <Carousel
-        autoPlaySpeed={2000}
+        autoPlaySpeed={1000}
         responsive={responsive}
         infinite={true}
         containerClass="carousel-container"
-        removeArrowOnDeviceType={['tablet', 'mobile',"desktop"]}
+        removeArrowOnDeviceType={['tablet', 'mobile', 'desktop']}
         itemClass="carousel-item"
-        className='mt-10 m-10 mb-10 sm:mx-24 md:mx-32 lg:mx-56'
+        className='mt-10 m-10 mb-10 sm:mx-24 md:mx-32 lg:mx-56 '
       >
-        {placements.map((placement) => (
-          <div key={placement.id} className='z-20 bg-[#FDECEA]   m-3 py-12 border-b-8 border-red-500 rounded-lg'>
+        {Array.isArray(placements) && placements.map((placement) => (
+          <div key={placement._id} className='z-20 bg-[#FDECEA] m-3 pt-12 pb-3 border-b-8 border-red-500 rounded-lg '>
             <h2 style={{ backgroundImage: "url('../src/assets/pack.png')", backgroundSize: "cover", backgroundRepeat: "no-repeat" }}
-              className='place text-sm rounded-s-full rounded-t-full  h-8 w-44 transition-transform -rotate-45 relative -left-11 -top-5 flex justify-center items-center font-semibold text-white '>
+              className='place text-sm rounded-s-full rounded-t-full h-8 w-44 transition-transform -rotate-45 relative -left-11 -top-5 flex justify-center items-center font-semibold text-white '>
               Package : {placement.package}
             </h2>
             <div className='flex flex-col justify-between items-center gap-3'>
-              <img className='z-20' src={placement.image} alt={placement.name} />
-              <h1 className='font-bold text-2xl'>{placement.name}</h1>
+              <img className='z-20' src={`http://localhost:5000${placement.image}`} alt={placement.name} />
+              <h1 className='font-bold text-2xl text-center'>{placement.name}</h1>
               <p className='text-lg font-extralight '>{placement.position}</p>
-              <img src={placement.companyLogo} alt={placement.name} />
+              <img src={`http://localhost:5000${placement.companyLogo}`} alt={placement.name} className='w-44'/>
             </div>
           </div>
         ))}

@@ -32,7 +32,7 @@ const Book = ({ onClose }) => {
          </p>
           <h2 className='text-[#6f6e6e] text-sm font-semibold'>For sales queries, contact us at:</h2>
           <h6 className='text-[#626480] text-sm font-semibold'>Email</h6>
-          <a href="mailto:training@shantiinfosoft.com" className='font-semibold' href="">training@shantiinfosoft.com</a>
+          <a href="mailto:training@shantiinfosoft.com" className='font-semibold'>training@shantiinfosoft.com</a>
           <h6 className='text-[#626480] text-sm font-semibold'>Phone</h6>
           <a href="tel:+918815531673" className='font-semibold'>+91-8815531673</a >
 

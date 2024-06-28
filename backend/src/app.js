@@ -20,12 +20,12 @@ app.use(
   })
 );
 
-require("./src/db/connections");
+require("./db/connections");
 
-const userRoutes = require("./src/routes/users");
-const placementRoutes = require("./src/routes/placements");
-const reviewRoutes = require("./src/routes/reviews");
-const blogRoutes = require("./src/routes/blogs");
+const userRoutes = require("./routes/users");
+const placementRoutes = require("./routes/placements");
+const reviewRoutes = require("./routes/reviews");
+const blogRoutes = require("./routes/blogs");
 
 // Routes
 app.use(userRoutes);
@@ -34,10 +34,10 @@ app.use(reviewRoutes);
 app.use(blogRoutes);
 
 // Serve static files
-app.use('/uploads', express.static(path.join(__dirname, '../uploads')));
-// app.use('/uploads', express.static(staticDir));
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
-const PORT = process.env.PORT || 5000;
+const PORT = 5000;
+
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });
