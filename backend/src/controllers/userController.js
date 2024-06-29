@@ -1,4 +1,4 @@
-const Users = require("../models/user");
+const Users = require("../models/users");
 const transporter = require("../config/nodemailer");
 
 exports.createUser = async (req, res) => {

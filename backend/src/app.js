@@ -1,43 +1,19 @@
-const express = require("express");
-const cors = require("cors");
-const path = require("path");
-require("dotenv").config();
-
+const express = require('express');
+const path = require('path');
 const app = express();
+
+// Middleware for parsing request body and form data
 app.use(express.json());
-
-const allowedOrigins = ["http://localhost:5173"];
-
-app.use(
-  cors({
-    origin: function (origin, callback) {
-      if (!origin || allowedOrigins.includes(origin)) {
-        callback(null, true);
-      } else {
-        callback(new Error("Not allowed by CORS"));
-      }
-    },
-  })
-);
-
-require("./db/connections");
-
-const userRoutes = require("./routes/users");
-const placementRoutes = require("./routes/placements");
-const reviewRoutes = require("./routes/reviews");
-const blogRoutes = require("./routes/blogs");
-
-// Routes
-app.use(userRoutes);
-app.use(placementRoutes);
-app.use(reviewRoutes);
-app.use(blogRoutes);
+app.use(express.urlencoded({ extended: true }));
 
 // Serve static files
-app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+app.use('/uploads', express.static(path.join(__dirname, 'src/uploads')));
 
-const PORT = 5000;
+// Import routes
+const blogRoutes = require('./src/routes/blogRoutes');
+app.use('/api', blogRoutes);
 
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
