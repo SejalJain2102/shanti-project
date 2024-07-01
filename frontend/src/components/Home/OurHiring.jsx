@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
-import ozone from "../assets/ozonsoft-logo.png";
-import accenture from "../assets/accen.png";
-import amazon from "../assets/amazon.png";
-import flipkart from "../assets/flipkart.png";
-import ibm from "../assets/ibm.png";
-import infosys from "../assets/infosys.png";
-import tcs from "../assets/tcs.png";
+import ozone from "../../assets/ozonsoft-logo.png";
+import accenture from "../../assets/accen.png";
+import amazon from "../../assets/amazon.png";
+import flipkart from "../../assets/flipkart.png";
+import ibm from "../../assets/ibm.png";
+import infosys from "../../assets/infosys.png";
+import tcs from "../../assets/tcs.png";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Carousel from 'react-multi-carousel';

@@ -1,19 +1,21 @@
 const express = require('express');
-const path = require('path');
+const mongoose = require('mongoose');
+const placementRoutes = require('./routes/placementRoutes');
 const app = express();
 
-// Middleware for parsing request body and form data
+mongoose.connect('mongodb://localhost:27017/yourDatabaseName', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Serve static files
-app.use('/uploads', express.static(path.join(__dirname, 'src/uploads')));
+// Serve static files from the 'uploads' directory
+app.use('/uploads', express.static('uploads'));
 
-// Import routes
-const blogRoutes = require('./src/routes/blogRoutes');
-app.use('/api', blogRoutes);
+app.use('/api', placementRoutes);
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+app.listen(5000, () => {
+  console.log('Server is running on port 5000');
 });

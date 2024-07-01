@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link, useLocation } from "react-router-dom";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
-import python from "../assets/python-logo.svg";
+import python from "../../assets/python-logo.svg";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 

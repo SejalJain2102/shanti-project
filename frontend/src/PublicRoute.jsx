@@ -2,24 +2,24 @@ import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Header from './components/Header'
-import Home from './components/Home';
-import Node from './components/Node';
-import Reactjs from './components/Reactjs';
-import Python from './components/Python';
-import DigitalMar from './components/DigitalMar';
+import Home from './components/Home/Home';
+import Node from './components/Course/Node';
+import Reactjs from './components/Course/Reactjs';
+import Python from './components/Course/Python';
+import DigitalMar from './components/Course/DigitalMar';
 import Footer from './components/Footer'
 import Submit from './components/Submit';
-import Course from './components/Course';
+import Course from './components/Course/Course';
 import OurPlace from './components/OurPlace';
 import ContactUs from './components/ContactUs';
 import Book from './components/Book';
-import AboutUs from './components/AboutUs';
-import Blogs from './components/Blogs';
-import BlogOffline from './components/BlogOffline';
-import BlogReact from './components/BlogReact';
-import BlogNode from './components/BlogNode';
-import BlogPython from './components/BlogPython';
-import BlogDigital from './components/BlogDigital';
+import AboutUs from './components/AboutUs/AboutUs';
+import Blogs from './components/Blogs/Blogs';
+import BlogOffline from './components/Blogs/BlogOffline';
+import BlogReact from './components/Blogs/BlogReact';
+import BlogNode from './components/Blogs/BlogNode';
+import BlogPython from './components/Blogs/BlogPython';
+import BlogDigital from './components/Blogs/BlogDigital';
 
 const PublicRoute = () => {
   return (

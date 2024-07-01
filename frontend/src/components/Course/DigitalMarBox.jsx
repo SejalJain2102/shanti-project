@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link,  } from "react-router-dom";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
-import mark from "../assets/marketing-logo.svg";
+import mark from "../../assets/marketing-logo.svg";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 

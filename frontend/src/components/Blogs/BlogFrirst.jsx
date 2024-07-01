@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link, useLocation } from 'react-router-dom';
-import './Shadow.css';
+import '../Shadow.css';
 
-const BlogFrirst = () => {
+const BlogFirst = () => {
   const [blogs, setBlogs] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const blogsPerPage = 6;
@@ -86,7 +86,7 @@ const Pagination = ({ blogsPerPage, totalBlogs, paginate, currentPage, nextPage,
 
   return (
     <nav className='flex justify-center mt-4'>
-      <ul className='pagination flex gap-3  '>
+      <ul className='pagination flex gap-3'>
         <li className={`page-item ${currentPage === 1 ? 'disabled' : ''}`}>
           <button onClick={prevPage} className='page-link bg-red-400 p-1 px-2 rounded text-white'>
             Previous
@@ -94,7 +94,10 @@ const Pagination = ({ blogsPerPage, totalBlogs, paginate, currentPage, nextPage,
         </li>
         {pageNumbers.map(number => (
           <li key={number} className={`page-item ${number === currentPage ? 'active' : ''}`}>
-            <button onClick={() => paginate(number)} className='page-link bg-red-400 p-1 px-2 rounded text-white'>
+            <button
+              onClick={() => paginate(number)}
+              className={`page-link p-1 px-2 rounded text-white ${number === currentPage ? 'bg-red-700' : 'bg-red-400'}`}
+            >
               {number}
             </button>
           </li>
@@ -109,4 +112,4 @@ const Pagination = ({ blogsPerPage, totalBlogs, paginate, currentPage, nextPage,
   );
 };
 
-export default BlogFrirst;
+export default BlogFirst;

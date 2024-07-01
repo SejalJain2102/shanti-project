@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import { GoDotFill } from "react-icons/go";
-import ibm from "../assets/ibm.png";
+import ibm from "../../assets/ibm.png";
 
 
 const VipinSir = () => {

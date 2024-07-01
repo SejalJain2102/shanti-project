@@ -5,8 +5,8 @@ exports.createBlog = async (req, res) => {
   const { heading, paragraph, createdby } = req.body;
   const { image } = req.files;
 
-  console.log('Request body:', req.body); // Debugging line
-  console.log('Uploaded files:', req.files); // Debugging line
+  console.log('Request body:', req.body);  
+  console.log('Uploaded files:', req.files);  
 
   if (!heading || !paragraph || !createdby) {
     return res.status(400).send('All fields are required');
@@ -15,7 +15,7 @@ exports.createBlog = async (req, res) => {
   if (!image || image.length === 0) return res.status(400).send('No image provided');
 
   const imagePath = `/uploads/blogs/${image[0].filename}`;
-  console.log('Image path:', imagePath); // Debugging line
+  console.log('Image path:', imagePath);  
   const currentDate = new Date().toISOString();
 
   const blogObj = {

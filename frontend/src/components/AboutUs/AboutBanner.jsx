@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
-import aboutBan from "../assets/aboutBgBanner.jpg"
-import sup from "../assets/aboutCircle.jpg"
+import aboutBan from "../../assets/aboutBgBanner.jpg"
+import sup from "../../assets/aboutCircle.jpg"
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 const AboutBanner = () => {

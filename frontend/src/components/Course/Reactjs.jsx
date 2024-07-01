@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './Shadow.css'
+import '../Shadow.css'
 import { TiTick } from "react-icons/ti";
 import { MdComputer } from "react-icons/md";
 import { SlCalender } from "react-icons/sl";
@@ -13,10 +13,10 @@ import { RiContactsFill } from "react-icons/ri";
 import { SiAuthelia } from "react-icons/si";
 import { useLocation } from 'react-router-dom';
 import { HiUserGroup } from "react-icons/hi2";
-import Tools from './Tools';
+import Tools from '../Tools';
 
 
-const Node = () => {
+const Reactjs = () => {
   const location = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -27,7 +27,7 @@ const Node = () => {
     <>
       <div className='flex justify-evenly items-center gap-3 p-3  m-1  bg-cover bg-no-repeat text-white' style={{ backgroundImage: "url(../src/assets/contactBgBan.jpg)", backgroundPosition:"center" }}>
         <div className='flex flex-col justify-center items-center gap-2 mt-6 mb-6 p-4'>
-          <p className='sm:text-4xl text-2xl font-bold mb-6 text-center'>Become a Node js Developer</p>
+          <p className='sm:text-4xl text-2xl font-bold mb-6 text-center'>Become a React js Developer</p>
           <p className='font-bold text-md flex justify-center items-center gap-2'><TiTick className='text-green-500 border border-black rounded-full' /> No prior coding experience required</p>
           <p className='font-bold text-md flex justify-center items-center gap-2'><TiTick className='text-green-500 border border-black rounded-full' /> 30 weeks full-time program with offline classes</p>
           <p className='font-bold text-md flex justify-center items-center gap-2'><TiTick className='text-green-500 border border-black rounded-full' /> Top recruiters from PayTM, Walmart, Amazon</p>
@@ -60,7 +60,7 @@ const Node = () => {
 
       <div className='flex flex-col items-center gap-2 p-4 mt-14 m-1 sm:mx-24 md:mx-32 lg:mx-56'>
         <h1 className='sm:text-4xl text-2xl font-bold text-center'>Minimum criteria</h1>
-        <h1 className='sm:text-4xl text-2xl font-bold text-center'>for Node js Developer Program</h1>
+        <h1 className='sm:text-4xl text-2xl font-bold text-center'>for React js Developer Program</h1>
         <p className='sm:text-2xl text-xl text-center'>You should meet the following requirements to be eligible for this course.</p>
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3  rounded-lg'>
           <div className='flex flex-col justify-center items-center m-1 p-4 shadow-1'>
@@ -97,7 +97,7 @@ const Node = () => {
       </div>
 
       <div className='flex flex-col items-center gap-2 p-3 mt-14 m-1 sm:mx-24 md:mx-32 lg:mx-56'>
-        <h1 className='sm:text-4xl text-2xl font-bold text-center'>Admission Process for Node js Developer Program</h1>
+        <h1 className='sm:text-4xl text-2xl font-bold text-center'>Admission Process for React js Developer Program</h1>
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4'>
           <div className='flex flex-col justify-start items-center m-3 p-4 shadow-1'>
             <RiContactsFill className='text-3xl' />
@@ -122,4 +122,4 @@ const Node = () => {
   );
 };
 
-export default Node;
+export default Reactjs;

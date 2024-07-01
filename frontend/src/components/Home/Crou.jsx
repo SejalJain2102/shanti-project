@@ -1,7 +1,7 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import "./Crou.css"; 
+import "../Crou.css"; 
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1324 },

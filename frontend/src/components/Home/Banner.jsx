@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import job from "../assets/job.svg"
+import job from "../../assets/job.svg"
 
 const Banner = () => {
   useEffect(() => {

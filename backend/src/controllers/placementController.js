@@ -11,8 +11,8 @@ exports.createPlacement = async (req, res) => {
   if (!image) return res.status(400).send('No image provided');
   if (!companyLogo) return res.status(400).send('No company logo provided');
 
-  const imagePath = `/uploads/ourPlacements/${image[0].originalname}`;
-  const companyLogoPath = `/uploads/ourPlacements/${companyLogo[0].originalname}`;
+  const imagePath = `/uploads/ourPlacements/${image[0].filename}`;
+  const companyLogoPath = `/uploads/ourPlacements/${companyLogo[0].filename}`;
 
   const ourPlacementObj = {
     name,

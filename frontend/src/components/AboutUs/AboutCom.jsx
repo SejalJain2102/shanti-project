@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-import first from "../assets/PoojaVishwakarma.png"
-import second from "../assets/AjeetSaroj.png"
-import third from "../assets/abhinay.jpeg"
+import first from "../../assets/PoojaVishwakarma.png"
+import second from "../../assets/AjeetSaroj.png"
+import third from "../../assets/abhinay.jpeg"
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import { GoDotFill } from "react-icons/go";

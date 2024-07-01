@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
-import '../App.css';
+import '../../App.css';
 import 'react-phone-input-2/lib/style.css';
 import './FirstCom.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import MyForm from './MyForm';
+import MyForm from '../MyForm';
 import { Link } from 'react-router-dom';
 
 const FirstCom = () => {

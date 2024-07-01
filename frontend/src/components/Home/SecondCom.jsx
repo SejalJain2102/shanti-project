@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Link } from 'react-router-dom';
-import wallOne from "../assets/100+1.png"
-import wallTwo from "../assets/100+2.png"
+import wallOne from "../../assets/100+1.png"
+import wallTwo from "../../assets/100+2.png"
 
 const SecondCom = () => {
   useEffect(() => {
